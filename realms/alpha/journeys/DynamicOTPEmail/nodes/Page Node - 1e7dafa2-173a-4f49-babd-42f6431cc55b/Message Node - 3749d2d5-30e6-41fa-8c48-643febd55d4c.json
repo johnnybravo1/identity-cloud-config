@@ -1,0 +1,24 @@
+{
+  "_id": "3749d2d5-30e6-41fa-8c48-643febd55d4c",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-272440295",
+  "_type": {
+    "_id": "MessageNode",
+    "collection": true,
+    "name": "Message Node"
+  },
+  "message": {
+    "en": "Email Sent"
+  },
+  "messageNo": {},
+  "messageYes": {}
+}

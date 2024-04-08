@@ -1,0 +1,26 @@
+{
+  "_id": "5afbb6bf-fafe-4622-a1c0-ce0128dfab87",
+  "_outcomes": [
+    {
+      "displayName": "Patched",
+      "id": "PATCHED"
+    },
+    {
+      "displayName": "Failed",
+      "id": "FAILURE"
+    }
+  ],
+  "_rev": "-418359507",
+  "_type": {
+    "_id": "PatchObjectNode",
+    "collection": true,
+    "name": "Patch Object"
+  },
+  "identityAttribute": "userName",
+  "identityResource": "managed/alpha_user",
+  "ignoredFields": [
+    "mail",
+    "userName"
+  ],
+  "patchAsObject": false
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "9c640357-a9b1-4744-9936-c5452176b1c3",
+  "_outcomes": [],
+  "_rev": "-669487572",
+  "_type": {
+    "_id": "ChoiceCollectorNode",
+    "collection": true,
+    "name": "Choice Collector"
+  },
+  "choices": []
+}

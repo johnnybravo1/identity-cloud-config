@@ -1,0 +1,43 @@
+{
+  "_id": "073f6ef8-4947-4de2-9819-3b20e2c30b1b",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    },
+    {
+      "displayName": "false",
+      "id": "false"
+    }
+  ],
+  "_rev": "1008318033",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "c7c52ae3-6da5-43d7-bbde-5ae045021189",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "a7cb9b00-692b-4a28-bd56-2fd75fa98992",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    },
+    {
+      "_id": "b84a7998-b41e-4b4e-82a2-670600864ae8",
+      "displayName": "ExampleText",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "This is the page node description field"
+  },
+  "pageHeader": {
+    "en": "<a href=\"#/service/ResetPassword\"> Need help?</a>"
+  },
+  "stage": "{\"submitButtonText\":{\"en\":\"Login\"},\"pageFooter\":{\"en\":\"<a href=\\\"#/service/ResetPassword\\\"> Need help?</a>\"}}"
+}

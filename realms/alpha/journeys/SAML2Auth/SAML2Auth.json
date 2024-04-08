@@ -1,0 +1,94 @@
+{
+  "_id": "SAML2Auth",
+  "_rev": "1207739883",
+  "enabled": true,
+  "entryNodeId": "0fee8c36-f24d-486f-a86c-e319d3a40049",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "0fee8c36-f24d-486f-a86c-e319d3a40049": {
+      "connections": {
+        "ACCOUNT_EXISTS": "4935ab36-11e4-4978-b163-9e1315651257",
+        "NO_ACCOUNT": "4935ab36-11e4-4978-b163-9e1315651257"
+      },
+      "displayName": "SAML2 Authentication",
+      "nodeType": "product-Saml2Node",
+      "x": 210,
+      "y": 147.5
+    },
+    "3c915260-a0fc-4263-a1db-5db671ec1010": {
+      "connections": {
+        "false": "96131c3b-26ca-46be-98a6-54a8fa4bfffa",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 332,
+      "y": 417.5
+    },
+    "4935ab36-11e4-4978-b163-9e1315651257": {
+      "connections": {
+        "true": "9f6ba1bf-a52c-42cb-afd2-c72eb5d61b44"
+      },
+      "displayName": "SAMLAttributes to sharedstate",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 464,
+      "y": 173
+    },
+    "6c2e8895-5ca6-43fa-9d49-56a2859e9364": {
+      "connections": {
+        "outcome": "f9f07866-b036-4942-a969-df4ba5898eb8"
+      },
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode",
+      "x": 842,
+      "y": 690
+    },
+    "96131c3b-26ca-46be-98a6-54a8fa4bfffa": {
+      "connections": {
+        "false": "6c2e8895-5ca6-43fa-9d49-56a2859e9364",
+        "true": "f9f07866-b036-4942-a969-df4ba5898eb8"
+      },
+      "displayName": "Required Attributes Present",
+      "nodeType": "RequiredAttributesDecisionNode",
+      "x": 569,
+      "y": 547.5
+    },
+    "9f6ba1bf-a52c-42cb-afd2-c72eb5d61b44": {
+      "connections": {
+        "true": "3c915260-a0fc-4263-a1db-5db671ec1010"
+      },
+      "displayName": "Print shared state",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 776,
+      "y": 173
+    },
+    "f9f07866-b036-4942-a969-df4ba5898eb8": {
+      "connections": {
+        "CREATED": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Create Object",
+      "nodeType": "CreateObjectNode",
+      "x": 936,
+      "y": 435
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1776,
+      "y": 87
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1776,
+      "y": 233.5
+    },
+    "startNode": {
+      "x": 70,
+      "y": 165.5
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

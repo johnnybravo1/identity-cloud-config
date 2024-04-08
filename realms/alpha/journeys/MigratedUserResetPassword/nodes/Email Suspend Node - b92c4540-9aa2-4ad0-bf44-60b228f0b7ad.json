@@ -1,0 +1,24 @@
+{
+  "_id": "b92c4540-9aa2-4ad0-bf44-60b228f0b7ad",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-1827415953",
+  "_type": {
+    "_id": "EmailSuspendNode",
+    "collection": true,
+    "name": "Email Suspend Node"
+  },
+  "emailAttribute": "mail",
+  "emailSuspendMessage": {
+    "en": "An email has been sent to the address you entered. Click the link in that email to proceed.",
+    "it": "E’ stata inviata un’email al tuo indirizzo per accedere di nuovo al tuo account. Clicca sul link presente nella email per procedere.",
+    "it-it": "E’ stata inviata un’email al tuo indirizzo per accedere di nuovo al tuo account. Clicca sul link presente nella email per procedere."
+  },
+  "emailTemplateName": "resetPasswordIt",
+  "identityAttribute": "mail",
+  "objectLookup": true
+}

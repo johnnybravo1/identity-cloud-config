@@ -1,0 +1,25 @@
+{
+  "_id": "1ff194dd-13df-4412-b3df-7a247ea54883",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    },
+    {
+      "displayName": "Error",
+      "id": "error"
+    }
+  ],
+  "_rev": "-1657860443",
+  "_type": {
+    "_id": "VerifyAuthCollectorDecisionNode",
+    "collection": true,
+    "name": "Twilio Verify Collector Decision"
+  },
+  "hideCode": true,
+  "identifierSharedState": "userIdentifier"
+}

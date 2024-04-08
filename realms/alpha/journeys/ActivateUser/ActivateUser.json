@@ -1,0 +1,145 @@
+{
+  "_id": "ActivateUser",
+  "_rev": "-1201625731",
+  "enabled": true,
+  "entryNodeId": "2342e72a-eddd-4db8-9424-d48a95c05748",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "135dbb6a-2b2c-4332-8383-780c637bcdf1": {
+      "connections": {
+        "outcome": "94ac0d69-49dd-46e1-9b03-afb5565394b4"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 1081,
+      "y": 99.3203125
+    },
+    "2342e72a-eddd-4db8-9424-d48a95c05748": {
+      "connections": {
+        "missing": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "efa1a5e5-a030-431d-a425-92182900974d"
+      },
+      "displayName": "Read Activation Parameters",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 152,
+      "y": 334.3203125
+    },
+    "451bebe2-0aef-4b1a-bb15-e45d706abe3f": {
+      "connections": {
+        "false": "135dbb6a-2b2c-4332-8383-780c637bcdf1",
+        "true": "60777ea7-515a-4931-a544-7dc50e73a415"
+      },
+      "displayName": "Attribute Present Decision",
+      "nodeType": "AttributePresentDecisionNode",
+      "x": 826,
+      "y": 8.3203125
+    },
+    "49ad56da-12ec-4485-94bd-d15aa461d651": {
+      "connections": {
+        "false": "f223c4b4-dea5-4279-bebf-58bb18d4ca3d",
+        "true": "be1d0ef8-59a4-4553-9ce2-b1eb21c9d508"
+      },
+      "displayName": "Check User Active",
+      "nodeType": "AttributeValueDecisionNode",
+      "x": 389,
+      "y": 220.21249389648438
+    },
+    "60777ea7-515a-4931-a544-7dc50e73a415": {
+      "connections": {
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "PATCHED": "94185607-ad3d-422a-a1b4-bcd73628a56b"
+      },
+      "displayName": "Patch User",
+      "nodeType": "PatchObjectNode",
+      "x": 1400,
+      "y": 24.3203125
+    },
+    "94185607-ad3d-422a-a1b4-bcd73628a56b": {
+      "connections": {
+        "outcome": "d60f8f68-8055-4120-b8ee-10da6cf41778"
+      },
+      "displayName": "Account Lockout",
+      "nodeType": "AccountLockoutNode",
+      "x": 1360,
+      "y": 333.3203125
+    },
+    "94ac0d69-49dd-46e1-9b03-afb5565394b4": {
+      "connections": {
+        "false": "135dbb6a-2b2c-4332-8383-780c637bcdf1",
+        "true": "60777ea7-515a-4931-a544-7dc50e73a415"
+      },
+      "displayName": "Validate Password",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1096.5999755859375,
+      "y": 314.2124938964844
+    },
+    "be1d0ef8-59a4-4553-9ce2-b1eb21c9d508": {
+      "connections": {
+        "true": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "User Already Active",
+      "nodeType": "PageNode",
+      "x": 616,
+      "y": 359.2124938964844
+    },
+    "c98b0d83-94bb-4928-87f9-b1fb54aa7dc6": {
+      "connections": {
+        "true": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Activation Expired",
+      "nodeType": "PageNode",
+      "x": 831,
+      "y": 226.3203125
+    },
+    "d60f8f68-8055-4120-b8ee-10da6cf41778": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Update Account - Account Management API",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1437,
+      "y": 441.3203125
+    },
+    "efa1a5e5-a030-431d-a425-92182900974d": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "49ad56da-12ec-4485-94bd-d15aa461d651"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 201,
+      "y": 54.3203125
+    },
+    "f223c4b4-dea5-4279-bebf-58bb18d4ca3d": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "expired": "c98b0d83-94bb-4928-87f9-b1fb54aa7dc6",
+        "fail": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "pass": "451bebe2-0aef-4b1a-bb15-e45d706abe3f"
+      },
+      "displayName": "Validate Activation Code",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 580,
+      "y": 5.3203125
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1783,
+      "y": 203
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 800,
+      "y": 769
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Registration\"]"
+  }
+}

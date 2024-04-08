@@ -1,0 +1,62 @@
+{
+  "_id": "76144044-4112-45ff-a794-b3ed6407e635",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    },
+    {
+      "displayName": "false",
+      "id": "false"
+    }
+  ],
+  "_rev": "1407378511",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "8dd9bf96-fcf0-441f-8803-2629d3f073dd",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "d9f7db6f-88f0-4d3d-ad83-96f38601c586",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    },
+    {
+      "_id": "64457a9a-07a5-4693-8c22-357e5c0afaa4",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    },
+    {
+      "_id": "025bb0b1-a23d-4b39-a9a2-82e65c11b080",
+      "displayName": "KBA Definition",
+      "nodeType": "KbaCreateNode"
+    },
+    {
+      "_id": "a426c630-dcdb-4602-9c5f-debd1be15c94",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    },
+    {
+      "_id": "d83a9d60-58e1-4678-848b-21c561681870",
+      "displayName": "Accept Terms and Conditions",
+      "nodeType": "AcceptTermsAndConditionsNode"
+    },
+    {
+      "_id": "e475e1b7-83a2-45ea-b2ab-56e876c81e80",
+      "displayName": "approverDetailsExample",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "Signing up is fast and easy.<br>Already have an account? <a href='#/service/Login'>Sign In</a>"
+  },
+  "pageHeader": {
+    "en": "Sign Up"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "emailTemplate/emailSuspendTest",
+  "defaultLocale": "en",
+  "description": "",
+  "displayName": "emailSuspendTest",
+  "enabled": true,
+  "from": "\"ID Cloud Admin\" <>",
+  "html": {
+    "en": {
+      "file": "emailSuspendTest.en.html"
+    }
+  },
+  "message": {
+    "en": {
+      "file": "emailSuspendTest.en.md"
+    }
+  },
+  "mimeType": "text/html",
+  "styles": {
+    "file": "emailSuspendTest.css"
+  },
+  "subject": {
+    "en": ""
+  },
+  "templateId": "emailSuspendTest"
+}

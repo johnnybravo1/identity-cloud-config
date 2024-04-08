@@ -1,0 +1,33 @@
+{
+  "_id": "ad6bb2f5-1156-49df-9dbd-d0a7a04a013f",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    },
+    {
+      "displayName": "false",
+      "id": "false"
+    }
+  ],
+  "_rev": "-34787998",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "f5f98c4e-ffbf-4dfe-b5a3-2fd95f4b1cde",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "6a1dd59a-164f-4723-a854-26ce890eb51f",
+      "displayName": "Temp Password",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

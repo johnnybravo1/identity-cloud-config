@@ -1,0 +1,20 @@
+{
+  "_id": "c0baa321-d74c-4dcf-999c-37772c99aa19",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "266940580",
+  "_type": {
+    "_id": "OneTimePasswordCollectorDecisionNode",
+    "collection": true,
+    "name": "OTP Collector Decision"
+  },
+  "passwordExpiryTime": 5
+}

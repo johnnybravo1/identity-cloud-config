@@ -1,0 +1,36 @@
+{
+  "_id": "be1d0ef8-59a4-4553-9ce2-b1eb21c9d508",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    }
+  ],
+  "_rev": "30636959",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "3cad307e-3174-45d5-94cb-33f7068ac39d",
+      "displayName": "Hide Button",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {
+    "de": "Dein Konto wurde bereits aktiviert. <a href=\"https://de.allyz.com\">Allyz</a>",
+    "de-de": "Dein Konto wurde bereits aktiviert. <a href=\"https://de.allyz.com\">Allyz</a>",
+    "en": "Your account was already activated. <a href=\"https://www.allyz.com\">Allyz</a>",
+    "es": "Tu cuenta ya ha sido activada. <a href=\"https://es.allyz.com\">Allyz</a>",
+    "es-es": "Tu cuenta ya ha sido activada. <a href=\"https://es.allyz.com\">Allyz</a>",
+    "fr": "Votre compte est déjà activé. <a href=\"https://fr.allyz.com\">Allyz</a>",
+    "fr-fr": "Votre compte est déjà activé. <a href=\"https://fr.allyz.com\">Allyz</a>",
+    "it": "Il tuo account è già stato attivato. <a href=\"https://it.allyz.com\">Allyz</a>",
+    "it-it": "Il tuo account è già stato attivato. <a href=\"https://it.allyz.com\">Allyz</a>",
+    "nl": "Je account is al geactiveerd. <a href=\"https://nl.allyz.com\">Allyz</a>",
+    "nl-nl": "Je account is al geactiveerd. <a href=\"https://nl.allyz.com\">Allyz</a>"
+  },
+  "pageHeader": {}
+}

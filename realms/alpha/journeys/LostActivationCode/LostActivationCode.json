@@ -1,0 +1,101 @@
+{
+  "_id": "LostActivationCode",
+  "_rev": "-1561361450",
+  "enabled": true,
+  "entryNodeId": "791d3408-62ae-4a0c-82c3-4483d7ba300c",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "17f04e4b-92e0-4ecf-b7bc-06032d2c1dc2": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "ee5fe81a-5fc2-421f-a06f-027f2d58ddca"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 729,
+      "y": 156.5
+    },
+    "4eed63dc-c79a-44d6-a90d-93b1d8d23ebd": {
+      "connections": {
+        "DONE": "5b20f06c-97c8-460e-b76b-37ba9957fd50"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 1739,
+      "y": 80
+    },
+    "5afbb6bf-fafe-4622-a1c0-ce0128dfab87": {
+      "connections": {
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "PATCHED": "4eed63dc-c79a-44d6-a90d-93b1d8d23ebd"
+      },
+      "displayName": "Patch Object",
+      "nodeType": "PatchObjectNode",
+      "x": 1509,
+      "y": 156.5
+    },
+    "5b20f06c-97c8-460e-b76b-37ba9957fd50": {
+      "connections": {},
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 1577,
+      "y": 430
+    },
+    "791d3408-62ae-4a0c-82c3-4483d7ba300c": {
+      "connections": {
+        "true": "ce41e880-6a49-4038-9a44-2b8f199c0eab"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 202,
+      "y": 181.5
+    },
+    "cb524a2a-4559-4af2-a5cb-4fb7e60c3060": {
+      "connections": {
+        "true": "5afbb6bf-fafe-4622-a1c0-ce0128dfab87"
+      },
+      "displayName": "Manage Activation Code",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1241,
+      "y": 182
+    },
+    "ce41e880-6a49-4038-9a44-2b8f199c0eab": {
+      "connections": {
+        "false": "791d3408-62ae-4a0c-82c3-4483d7ba300c",
+        "true": "17f04e4b-92e0-4ecf-b7bc-06032d2c1dc2"
+      },
+      "displayName": "Email Validation Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 448,
+      "y": 97.5
+    },
+    "ee5fe81a-5fc2-421f-a06f-027f2d58ddca": {
+      "connections": {
+        "false": "cb524a2a-4559-4af2-a5cb-4fb7e60c3060",
+        "true": "5b20f06c-97c8-460e-b76b-37ba9957fd50"
+      },
+      "displayName": "Account Active Decision",
+      "nodeType": "AccountActiveDecisionNode",
+      "x": 976,
+      "y": 156.5
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 70,
+      "y": 419
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1365,
+      "y": 537
+    },
+    "startNode": {
+      "x": 70,
+      "y": 174.5
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Registration\"]"
+  }
+}

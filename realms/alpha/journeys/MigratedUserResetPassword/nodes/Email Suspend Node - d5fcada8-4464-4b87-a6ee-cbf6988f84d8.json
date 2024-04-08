@@ -1,0 +1,24 @@
+{
+  "_id": "d5fcada8-4464-4b87-a6ee-cbf6988f84d8",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-992600772",
+  "_type": {
+    "_id": "EmailSuspendNode",
+    "collection": true,
+    "name": "Email Suspend Node"
+  },
+  "emailAttribute": "mail",
+  "emailSuspendMessage": {
+    "en": "An email has been sent to the address you entered. Click the link in that email to proceed.",
+    "es": "Hemos enviado un email a la dirección de correo indicada. Haz click en el enlace del email para continuar.",
+    "es-es": "Hemos enviado un email a la dirección de correo indicada. Haz click en el enlace del email para continuar."
+  },
+  "emailTemplateName": "resetPasswordEs",
+  "identityAttribute": "mail",
+  "objectLookup": true
+}

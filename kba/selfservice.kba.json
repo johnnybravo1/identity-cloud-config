@@ -1,0 +1,7 @@
+{
+  "_id": "selfservice.kba",
+  "kbaPropertyName": "kbaInfo",
+  "minimumAnswersToDefine": 4,
+  "minimumAnswersToVerify": 1,
+  "questions": {}
+}

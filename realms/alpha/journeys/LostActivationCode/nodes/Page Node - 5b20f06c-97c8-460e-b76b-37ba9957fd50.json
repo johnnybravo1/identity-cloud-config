@@ -1,0 +1,24 @@
+{
+  "_id": "5b20f06c-97c8-460e-b76b-37ba9957fd50",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    }
+  ],
+  "_rev": "2012387307",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "ed2e0d33-57ce-438c-b519-f81e5b9977b3",
+      "displayName": "Redirect To Login",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

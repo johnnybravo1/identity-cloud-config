@@ -1,0 +1,28 @@
+{
+  "_id": "56c04eea-8492-48e3-96dd-79d6da655c00",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "533778119",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "343a172c-fe32-4102-a7fb-c5330f96c350",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "Enter your email address or <a href=\"#/service/Login\">Sign in</a>"
+  },
+  "pageHeader": {
+    "en": "Forgotten Username"
+  }
+}

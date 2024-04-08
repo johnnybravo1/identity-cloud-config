@@ -1,0 +1,28 @@
+{
+  "_id": "fb8a56d7-4649-437d-8647-905d0ffbc17b",
+  "_outcomes": [
+    {
+      "displayName": "success",
+      "id": "success"
+    }
+  ],
+  "_rev": "1139027378",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "d3496475-64c5-4b2a-9158-a178932a9303",
+      "displayName": "Dead-End",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "An email has been sent to the address you entered. Click the link in that email to proceed."
+  },
+  "pageHeader": {
+    "en": "Check your mail!"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "_id": "c98b0d83-94bb-4928-87f9-b1fb54aa7dc6",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    }
+  ],
+  "_rev": "622825013",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "1511a8b5-65f0-492a-9eec-15585e6fab2d",
+      "displayName": "Hide Button",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {
+    "de": "Der Link ist bereits abgelaufen. Verwende bitte einen anderen Link oder versuche, dich erneut zu registrieren <a href=\"https://de.allyz.com\">Allyz</a>",
+    "de-de": "Der Link ist bereits abgelaufen. Verwende bitte einen anderen Link oder versuche, dich erneut zu registrieren <a href=\"https://de.allyz.com\">Allyz</a>",
+    "en": "The link is already expired. Use another link or try to register one more time <a href=\"https://www.allyz.com\">Allyz</a>",
+    "es": "El enlace ya se ha expirado. Utiliza otro enlace o trata de registrarte una vez más <a href=\"https://es.allyz.com\">Allyz</a>",
+    "es-es": "El enlace ya se ha expirado. Utiliza otro enlace o trata de registrarte una vez más <a href=\"https://es.allyz.com\">Allyz</a>",
+    "fr": "Le lien a expiré.  Merci d’utiliser un nouveau lien ou connectez-vous à nouveau sur <a href=\"https://fr.allyz.com\">Allyz</a>",
+    "fr-fr": "Le lien a expiré.  Merci d’utiliser un nouveau lien ou connectez-vous à nouveau sur <a href=\"https://fr.allyz.com\">Allyz</a>",
+    "it": "Il link è scaduto. Usa un altro link o prova a registrarti un'altra volta su <a href=\"https://it.allyz.com\">Allyz</a>",
+    "it-it": "Il link è scaduto. Usa un altro link o prova a registrarti un'altra volta su <a href=\"https://it.allyz.com\">Allyz</a>",
+    "nl": "Deze link is verlopen. Gebruik een andere link of probeer je nogmaals te registreren op <a href=\"https://nl.allyz.com\">Allyz</a>",
+    "nl-nl": "Deze link is verlopen. Gebruik een andere link of probeer je nogmaals te registreren op <a href=\"https://nl.allyz.com\">Allyz</a>"
+  },
+  "pageHeader": {}
+}

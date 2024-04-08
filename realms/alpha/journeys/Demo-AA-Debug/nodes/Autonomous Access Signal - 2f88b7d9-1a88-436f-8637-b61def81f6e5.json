@@ -1,0 +1,24 @@
+{
+  "_id": "2f88b7d9-1a88-436f-8637-b61def81f6e5",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "89122841",
+  "_type": {
+    "_id": "AutonomousAccessSignalNode",
+    "collection": true,
+    "name": "Autonomous Access Signal"
+  },
+  "anomalyDetection": true,
+  "automatedUserAgentFilter": true,
+  "blockAndALlowList": false,
+  "credentialStuffing": true,
+  "distributedAttack": false,
+  "preventBruteForce": true,
+  "preventDoubleJeopardy": false,
+  "preventImpossibleTraveller": true,
+  "suspiciousIP": true
+}

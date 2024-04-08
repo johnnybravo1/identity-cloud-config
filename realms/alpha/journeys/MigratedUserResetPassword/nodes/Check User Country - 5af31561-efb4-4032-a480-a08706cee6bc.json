@@ -1,0 +1,45 @@
+{
+  "_id": "5af31561-efb4-4032-a480-a08706cee6bc",
+  "_outcomes": [
+    {
+      "displayName": "fr",
+      "id": "fr"
+    },
+    {
+      "displayName": "it",
+      "id": "it"
+    },
+    {
+      "displayName": "nl",
+      "id": "nl"
+    },
+    {
+      "displayName": "de",
+      "id": "de"
+    },
+    {
+      "displayName": "es",
+      "id": "es"
+    }
+  ],
+  "_rev": "-425245072",
+  "_type": {
+    "_id": "ScriptedDecisionNode",
+    "collection": true,
+    "name": "Scripted Decision"
+  },
+  "inputs": [
+    "*"
+  ],
+  "outcomes": [
+    "fr",
+    "it",
+    "nl",
+    "de",
+    "es"
+  ],
+  "outputs": [
+    "*"
+  ],
+  "script": "0d6dc532-11e2-432e-9d6f-200bb684ae36"
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "ConfigProvider",
+  "_rev": "347370138",
+  "enabled": true,
+  "entryNodeId": "e301438c-0bd0-429c-ab0c-66126501069a",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "8a67fcad-5a73-4e98-861d-8084e34968c7": {
+      "connections": {},
+      "displayName": "Patch Object",
+      "nodeType": "PatchObjectNode",
+      "x": 758,
+      "y": 182.76666259765625
+    },
+    "97058040-7a9b-4bd8-a8d7-c0683aeeeb2c": {
+      "connections": {},
+      "displayName": "Configuration Provider",
+      "nodeType": "ConfigProviderNode",
+      "x": 181,
+      "y": 155.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

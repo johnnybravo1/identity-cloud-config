@@ -1,0 +1,20 @@
+{
+  "_id": "db571ccd-c346-47c9-b268-dc40f638b769",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-1058244521",
+  "_type": {
+    "_id": "InnerTreeEvaluatorNode",
+    "collection": true,
+    "name": "Inner Tree Evaluator"
+  },
+  "tree": "BB-MFA-Push"
+}

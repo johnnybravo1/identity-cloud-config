@@ -1,0 +1,24 @@
+{
+  "_id": "0bcec811-359e-4ab7-a91a-c65ab088c791",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "1273366086",
+  "_type": {
+    "_id": "PersistentCookieDecisionNode",
+    "collection": true,
+    "name": "Persistent Cookie Decision"
+  },
+  "enforceClientIp": false,
+  "idleTimeout": 5,
+  "persistentCookieName": "session-jwt-pcookie",
+  "useHttpOnlyCookie": true,
+  "useSecureCookie": true
+}

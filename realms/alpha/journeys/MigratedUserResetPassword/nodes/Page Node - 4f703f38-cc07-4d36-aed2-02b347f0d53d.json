@@ -1,0 +1,49 @@
+{
+  "_id": "4f703f38-cc07-4d36-aed2-02b347f0d53d",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    }
+  ],
+  "_rev": "1551093618",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "ccfcb5c7-7c0b-4ce2-b350-08105dd6fbb8",
+      "displayName": "Page Render",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {
+    "de": "Aus Sicherheitsgründen bitte setzen Sie Ihr Passwort zurück.",
+    "de-de": "Aus Sicherheitsgründen bitte setzen Sie Ihr Passwort zurück.",
+    "en": "For security reasons please reset your password",
+    "es": "Por razones de seguridad, por favor cambia tu contraseña",
+    "es-es": "Por razones de seguridad, por favor cambia tu contraseña",
+    "fr": "Pour des raisons de sécurité, veuillez réinitialiser votre mot de passe",
+    "fr-fr": "Pour des raisons de sécurité, veuillez réinitialiser votre mot de passe",
+    "it": "Per motivi di sicurezza reimpostare la password",
+    "it-it": "Per motivi di sicurezza reimpostare la password",
+    "nl": "Om veiligheidsredenen graag uw wachtwoord resetten",
+    "nl-nl": "Om veiligheidsredenen graag uw wachtwoord resetten"
+  },
+  "pageHeader": {
+    "de": "Passwort zurücksetzen",
+    "de-de": "Passwort zurücksetzen",
+    "en": "Reset Password",
+    "es": "Recuperar contraseña",
+    "es-es": "Recuperar contraseña",
+    "fr": "Créer ou réinitialiser votre mot de passe",
+    "fr-fr": "Créer ou réinitialiser votre mot de passe",
+    "it": "Reset Password",
+    "it-it": "Reset Password",
+    "nl": "Wachtwoord wijzigen",
+    "nl-nl": "Wachtwoord wijzigen"
+  },
+  "stage": "{\"submitButtonText\":{\"en\":\"Send Recovery Link\",\"fr\":\"Envoyer le lien de récupération\",\"fr-fr\":\"Envoyer le lien de récupération\",\"it\":\"Invia link di recupero\",\"it-it\":\"Invia link di recupero\",\"nl\":\"Herstel mijn wachtwoord\",\"nl-nl\":\"Herstel mijn wachtwoord\",\"de\":\"Link zur Passwort-Wiederherstellung senden\",\"de-de\":\"Link zur Passwort-Wiederherstellung senden\",\"es\":\"Enviar el enlace de recuperación\",\"es-es\":\"Enviar el enlace de recuperación\"}}"
+}

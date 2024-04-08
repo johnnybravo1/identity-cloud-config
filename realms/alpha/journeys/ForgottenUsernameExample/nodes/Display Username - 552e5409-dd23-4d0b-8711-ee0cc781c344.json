@@ -1,0 +1,26 @@
+{
+  "_id": "552e5409-dd23-4d0b-8711-ee0cc781c344",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1672388451",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "48a658fa-f081-40ef-834d-943f52c6f6c3",
+      "displayName": "Display Username",
+      "nodeType": "DisplayUserNameNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "<a href=\"#/service/Login\">Sign in</a>"
+  },
+  "pageHeader": {}
+}

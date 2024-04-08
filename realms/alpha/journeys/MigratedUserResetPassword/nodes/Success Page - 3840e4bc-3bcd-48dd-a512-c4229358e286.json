@@ -1,0 +1,49 @@
+{
+  "_id": "3840e4bc-3bcd-48dd-a512-c4229358e286",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    }
+  ],
+  "_rev": "1413454854",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "28323b5e-2247-4cfd-a788-250cd5ec3806",
+      "displayName": "Page Render",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {
+    "de": "Dein Passwort wurde erfolgreich zurückgesetzt. Klicke auf den Button unten, um dich anzumelden.",
+    "de-de": "Dein Passwort wurde erfolgreich zurückgesetzt. Klicke auf den Button unten, um dich anzumelden.",
+    "en": "Password was successfully reset. Please click on the below button to Login",
+    "es": "Por favor, haz click en el siguiente botón para acceder a tu cuenta.",
+    "es-es": "Por favor, haz click en el siguiente botón para acceder a tu cuenta.",
+    "fr": "Votre mot de passe a été mis à jour. Cliquez sur le lien ci-dessous pour vous connecter.",
+    "fr-fr": "Votre mot de passe a été mis à jour. Cliquez sur le lien ci-dessous pour vous connecter.",
+    "it": "La password è stata reimpostata correttamente. Fare clic sul pulsante in basso per accedere",
+    "it-it": "La password è stata reimpostata correttamente. Fare clic sul pulsante in basso per accedere",
+    "nl": "Het is gelukt om je wachtwoord opnieuw in te stellen. Klik op onderstaande knop om in te loggen",
+    "nl-nl": "Het is gelukt om je wachtwoord opnieuw in te stellen. Klik op onderstaande knop om in te loggen"
+  },
+  "pageHeader": {
+    "de": "Passwort-Wiederherstellung erfolgreich",
+    "de-de": "Passwort-Wiederherstellung erfolgreich",
+    "en": "Password Reset Successful",
+    "es": "Se ha recuperado la contraseña con exito",
+    "es-es": "Se ha recuperado la contraseña con exito",
+    "fr": "Mot de passe réinitialisé avec succès",
+    "fr-fr": "Mot de passe réinitialisé avec succès",
+    "it": "Password reimpostata con successo",
+    "it-it": "Password reimpostata con successo",
+    "nl": "Wachtwoord opnieuw instellen is gelukt",
+    "nl-nl": "Wachtwoord opnieuw instellen is gelukt"
+  },
+  "stage": "{\"submitButtonText\":{\"en\":\"Continue to Login\",\"fr\":\"Connexion\",\"fr-fr\":\"Connexion\",\"it\":\"Continua con il Login\",\"it-it\":\"Continua con il Login\",\"nl\":\"Ga verder naar Login \",\"nl-nl\":\"Ga verder naar Login \",\"de\":\"Weiter zum Login\",\"de-de\":\"Weiter zum Login\",\"es\":\"Continuar\",\"es-es\":\"Continuar\"}}"
+}

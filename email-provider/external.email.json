@@ -1,0 +1,18 @@
+{
+  "_id": "external.email",
+  "connectiontimeout": 30000,
+  "debug": false,
+  "from": "\"adin\" <admin@idc.com>",
+  "host": "mail.smtpbucket.com",
+  "port": 8025,
+  "smtpProperties": [],
+  "ssl": {
+    "enable": false
+  },
+  "starttls": {
+    "enable": false
+  },
+  "threadPoolSize": 20,
+  "timeout": 30000,
+  "writetimeout": 30000
+}

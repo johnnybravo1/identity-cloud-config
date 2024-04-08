@@ -1,0 +1,13 @@
+{
+  "_id": "saml2",
+  "_rev": "838041791",
+  "enabled": true,
+  "entryNodeId": "e301438c-0bd0-429c-ab0c-66126501069a",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {},
+  "staticNodes": {},
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

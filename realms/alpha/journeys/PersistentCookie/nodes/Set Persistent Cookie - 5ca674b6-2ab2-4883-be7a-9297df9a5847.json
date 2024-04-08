@@ -1,0 +1,20 @@
+{
+  "_id": "5ca674b6-2ab2-4883-be7a-9297df9a5847",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "337739012",
+  "_type": {
+    "_id": "SetPersistentCookieNode",
+    "collection": true,
+    "name": "Set Persistent Cookie"
+  },
+  "idleTimeout": 5,
+  "maxLife": 5,
+  "persistentCookieName": "session-jwt-pcookie",
+  "useHttpOnlyCookie": true,
+  "useSecureCookie": true
+}

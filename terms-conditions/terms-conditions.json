@@ -1,0 +1,45 @@
+{
+  "_id": "selfservice.terms",
+  "active": "0.2",
+  "versions": [
+    {
+      "createDate": "2019-10-28T04:20:11.320Z",
+      "termsTranslations": {
+        "en": {
+          "file": "0.0/en.html"
+        }
+      },
+      "version": "0.0"
+    },
+    {
+      "createDate": "2023-12-14T08:59:48.434Z",
+      "termsTranslations": {
+        "en": {
+          "file": "0.1/en.html"
+        },
+        "es": {
+          "file": "0.1/es.html"
+        },
+        "pt": {
+          "file": "0.1/pt.html"
+        }
+      },
+      "version": "0.1"
+    },
+    {
+      "createDate": "2024-01-10T17:22:55.991Z",
+      "termsTranslations": {
+        "en": {
+          "file": "0.2/en.html"
+        },
+        "es": {
+          "file": "0.2/es.html"
+        },
+        "pt": {
+          "file": "0.2/pt.html"
+        }
+      },
+      "version": "0.2"
+    }
+  ]
+}

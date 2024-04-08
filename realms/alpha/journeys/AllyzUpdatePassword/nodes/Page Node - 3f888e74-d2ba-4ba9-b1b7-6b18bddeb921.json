@@ -1,0 +1,33 @@
+{
+  "_id": "3f888e74-d2ba-4ba9-b1b7-6b18bddeb921",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1804055774",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "94177a25-e70b-45eb-82c3-6da5900eedcf",
+      "displayName": "Input Validation Error Message",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "d395808a-d147-4ab6-bc12-4be9ecf62212",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "Enter new password"
+  },
+  "pageHeader": {
+    "en": "Update Password"
+  }
+}

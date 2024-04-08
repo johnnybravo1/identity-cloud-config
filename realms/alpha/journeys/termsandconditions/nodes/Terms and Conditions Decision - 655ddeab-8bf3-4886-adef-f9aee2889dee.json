@@ -1,0 +1,20 @@
+{
+  "_id": "655ddeab-8bf3-4886-adef-f9aee2889dee",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-138789043",
+  "_type": {
+    "_id": "TermsAndConditionsDecisionNode",
+    "collection": true,
+    "name": "Terms and Conditions Decision"
+  },
+  "identityAttribute": "userName"
+}

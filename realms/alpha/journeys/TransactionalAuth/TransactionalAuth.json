@@ -1,0 +1,75 @@
+{
+  "_id": "TransactionalAuth",
+  "_rev": "704580004",
+  "enabled": true,
+  "entryNodeId": "6187ce78-c643-4144-8dd3-0059ff0fa5c3",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "295ea101-8fe1-4020-b442-dee6c58aed98": {
+      "connections": {},
+      "displayName": "callback example",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 148,
+      "y": 517.7666625976562
+    },
+    "6187ce78-c643-4144-8dd3-0059ff0fa5c3": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "b98dd62c-b8e1-4794-b929-67cbd2bdd515"
+      },
+      "displayName": "Login",
+      "nodeType": "PageNode",
+      "x": 165,
+      "y": 107.76666259765625
+    },
+    "6e9536c5-b0d0-4510-887e-91a62d6086ca": {
+      "connections": {},
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode",
+      "x": 422,
+      "y": 447.76666259765625
+    },
+    "9e0062bd-6093-405c-906a-142f87169fb5": {
+      "connections": {},
+      "displayName": "Message Node",
+      "nodeType": "MessageNode",
+      "x": 642,
+      "y": 287.76666259765625
+    },
+    "b98dd62c-b8e1-4794-b929-67cbd2bdd515": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 418,
+      "y": 177.76666259765625
+    },
+    "ba3b9cd2-087c-4d7a-b38a-200ab094e8c3": {
+      "connections": {},
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 195,
+      "y": 486.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "5fa9453d-8d86-440a-b5de-a3318cceecd8",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1526676044",
+  "_type": {
+    "_id": "EmailSuspendNode",
+    "collection": true,
+    "name": "Email Suspend Node"
+  },
+  "emailAttribute": "mail",
+  "emailSuspendMessage": {
+    "en": "An email has been sent to the address you entered. Click the link in that email to proceed.",
+    "fr": "Nous venons de vous envoyer un courriel. Si un compte existe avec cette adresse électronique, vous recevrez les instructions dans quelques minutes",
+    "fr-fr": "Nous venons de vous envoyer un courriel. Si un compte existe avec cette adresse électronique, vous recevrez les instructions dans quelques minutes",
+    "it": "E’ stata inviata un’email al tuo indirizzo per accedere di nuovo al tuo account. Clicca sul link presente nella email per procedere.",
+    "it-it": "E’ stata inviata un’email al tuo indirizzo per accedere di nuovo al tuo account. Clicca sul link presente nella email per procedere.",
+    "nl": "We hebben een e-mail gestuurd naar het door jou opgegeven e-mailadres. Klik op de link in de e-mail om verder te gaan.",
+    "nl-nl": "We hebben een e-mail gestuurd naar het door jou opgegeven e-mailadres. Klik op de link in de e-mail om verder te gaan."
+  },
+  "emailTemplateName": "resetPasswordFr",
+  "identityAttribute": "mail",
+  "objectLookup": true
+}

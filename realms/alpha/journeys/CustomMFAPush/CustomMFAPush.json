@@ -1,0 +1,271 @@
+{
+  "_id": "CustomMFAPush",
+  "_rev": "439999292",
+  "enabled": true,
+  "entryNodeId": "7ebb0fe0-85d3-4cdf-90ef-3974a83643e3",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "054b30b0-7029-44ad-af49-6080a396b58a": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "0dfe061b-7321-4995-8fe1-a7cf0a59ce8c": {
+      "connections": {
+        "Reject": "054b30b0-7029-44ad-af49-6080a396b58a",
+        "Retry": "9c4d656c-d892-4c36-bfc3-4226ebe6cb4b"
+      },
+      "displayName": "Retry Limit Decision",
+      "nodeType": "RetryLimitDecisionNode",
+      "x": 927,
+      "y": 322.7357940673828
+    },
+    "159e74b9-227b-4004-8acf-f5afcb54d36a": {
+      "connections": {
+        "outcome": "fab07d24-3275-4d31-b1fa-7612ea437df6"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "1fa9aa67-3425-442e-941f-56ae82889126": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "3310dfc2-c51b-423a-9af9-83f6879f8495": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "36342318-dd2a-43c0-ab37-094b16d37547": {
+      "connections": {
+        "EXPIRED": "ce5ec7ff-a86d-4361-a699-bc9335efbaae",
+        "FALSE": "4d068f9b-1183-428a-9a41-a7a9ea948260",
+        "TRUE": "3310dfc2-c51b-423a-9af9-83f6879f8495",
+        "WAITING": "b6e3773a-61b1-4953-9285-a864de200874"
+      },
+      "displayName": "Push Result Verifier Node",
+      "nodeType": "PushResultVerifierNode",
+      "x": 516,
+      "y": 191.7357940673828
+    },
+    "3ef52616-ac64-4107-a90c-ff3a86810584": {
+      "connections": {
+        "outcome": "36342318-dd2a-43c0-ab37-094b16d37547"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "4820f843-d2f1-4b45-a85a-acda4dd5a704": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "4d068f9b-1183-428a-9a41-a7a9ea948260": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "53ad5cf2-f3ba-4431-8220-6efe5becb784": {
+      "connections": {
+        "outcome": "83c43658-8a06-4d85-be07-7a90dce32a5c"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "54d5437a-38f8-4cb2-a5c4-f5f109c07cb5": {
+      "connections": {
+        "DONE": "f97b0f5c-4565-496d-bfff-56c1f059344c"
+      },
+      "displayName": "Polling Wait Node",
+      "nodeType": "PollingWaitNode",
+      "x": 943,
+      "y": 214.7357940673828
+    },
+    "55233cf2-5af3-45cb-a2ca-73e047c54f04": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "7ebb0fe0-85d3-4cdf-90ef-3974a83643e3": {
+      "connections": {
+        "outcome": "53ad5cf2-f3ba-4431-8220-6efe5becb784"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 88,
+      "y": 52.76666259765625
+    },
+    "83c43658-8a06-4d85-be07-7a90dce32a5c": {
+      "connections": {
+        "false": "fb15e753-5699-4f06-aac7-2844ab3080d3",
+        "true": "967d732d-3645-4924-9315-a18ed2bf0ccd"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 73.433349609375,
+      "y": 444.76666259765625
+    },
+    "967d732d-3645-4924-9315-a18ed2bf0ccd": {
+      "connections": {
+        "outcome": "d3fcb241-8d37-4e29-8169-49811df8bfef"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "9746189a-83ff-4b20-b41c-352611af889a": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "9c4d656c-d892-4c36-bfc3-4226ebe6cb4b": {
+      "connections": {
+        "outcome": "36342318-dd2a-43c0-ab37-094b16d37547"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "b6e3773a-61b1-4953-9285-a864de200874": {
+      "connections": {
+        "outcome": "54d5437a-38f8-4cb2-a5c4-f5f109c07cb5"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "c69321e1-5439-4128-8885-9e5075fa216a": {
+      "connections": {
+        "error": "1fa9aa67-3425-442e-941f-56ae82889126",
+        "next": "9746189a-83ff-4b20-b41c-352611af889a"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 599,
+      "y": 10.866668701171875
+    },
+    "ce5ec7ff-a86d-4361-a699-bc9335efbaae": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "d3fcb241-8d37-4e29-8169-49811df8bfef": {
+      "connections": {
+        "NOT_REGISTERED": "159e74b9-227b-4004-8acf-f5afcb54d36a",
+        "SENT": "3ef52616-ac64-4107-a90c-ff3a86810584",
+        "SKIPPED": "55233cf2-5af3-45cb-a2ca-73e047c54f04"
+      },
+      "displayName": "Push Sender",
+      "nodeType": "PushAuthenticationSenderNode",
+      "x": 257,
+      "y": 219.7357940673828
+    },
+    "dbfb5538-7a76-4677-909a-737bf892feb9": {
+      "connections": {
+        "outcome": "d3fcb241-8d37-4e29-8169-49811df8bfef"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "e0e9bb07-25a0-4199-ba7a-56712abea856": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "f97b0f5c-4565-496d-bfff-56c1f059344c": {
+      "connections": {
+        "outcome": "0dfe061b-7321-4995-8fe1-a7cf0a59ce8c"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    },
+    "fab07d24-3275-4d31-b1fa-7612ea437df6": {
+      "connections": {
+        "failureOutcome": "e0e9bb07-25a0-4199-ba7a-56712abea856",
+        "successOutcome": "dbfb5538-7a76-4677-909a-737bf892feb9",
+        "timeoutOutcome": "4820f843-d2f1-4b45-a85a-acda4dd5a704"
+      },
+      "displayName": "Push Registration",
+      "nodeType": "PushRegistrationNode",
+      "x": 377,
+      "y": 390.015625
+    },
+    "fb15e753-5699-4f06-aac7-2844ab3080d3": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Debug Node",
+      "nodeType": "DebugNode",
+      "x": null,
+      "y": null
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 831,
+      "y": 17
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1043,
+      "y": 638
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "_id": "exampleLogin",
+  "_rev": "-235794488",
+  "enabled": true,
+  "entryNodeId": "073f6ef8-4947-4de2-9819-3b20e2c30b1b",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "073f6ef8-4947-4de2-9819-3b20e2c30b1b": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "b67eb304-064a-43fe-8e8f-c7a8e8869b0a"
+      },
+      "displayName": "Login",
+      "nodeType": "PageNode",
+      "x": 165,
+      "y": 107.76666259765625
+    },
+    "5c67a76a-2df6-41cd-ad97-ea07a0d724c1": {
+      "connections": {},
+      "displayName": "Message Node",
+      "nodeType": "MessageNode",
+      "x": 642,
+      "y": 287.76666259765625
+    },
+    "5f34df1d-bcb3-4c14-bdb5-a0c7135bb3f1": {
+      "connections": {},
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 195,
+      "y": 486.76666259765625
+    },
+    "6b42889e-6d85-415c-ba1c-c6b4e4e67b1b": {
+      "connections": {},
+      "displayName": "callback example",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 148,
+      "y": 517.7666625976562
+    },
+    "6fe1fd99-cc18-4903-ba7e-58b86e395d36": {
+      "connections": {},
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode",
+      "x": 422,
+      "y": 447.76666259765625
+    },
+    "b67eb304-064a-43fe-8e8f-c7a8e8869b0a": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 418,
+      "y": 177.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

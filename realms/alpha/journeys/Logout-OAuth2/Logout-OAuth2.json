@@ -1,0 +1,46 @@
+{
+  "_id": "Logout-OAuth2",
+  "_rev": "620238355",
+  "enabled": true,
+  "entryNodeId": "0110d29e-e05e-4fba-894b-0e5be75a73ee",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "0110d29e-e05e-4fba-894b-0e5be75a73ee": {
+      "connections": {
+        "true": "6c38d0c2-6006-4eca-a53f-2595cd240928"
+      },
+      "displayName": "Get Username",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 202,
+      "y": 127.76666259765625
+    },
+    "6c38d0c2-6006-4eca-a53f-2595cd240928": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "OAuth2 Revoke",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 577,
+      "y": 192.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 851,
+      "y": 342
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

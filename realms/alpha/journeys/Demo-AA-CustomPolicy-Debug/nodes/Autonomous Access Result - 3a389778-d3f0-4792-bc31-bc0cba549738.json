@@ -1,0 +1,17 @@
+{
+  "_id": "3a389778-d3f0-4792-bc31-bc0cba549738",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-2013157625",
+  "_type": {
+    "_id": "AutonomousAccessResultNode",
+    "collection": true,
+    "name": "Autonomous Access Result"
+  },
+  "isMFA": false,
+  "outcome": "FAILURE"
+}

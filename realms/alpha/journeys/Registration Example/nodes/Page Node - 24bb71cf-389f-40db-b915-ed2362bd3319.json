@@ -1,0 +1,78 @@
+{
+  "_id": "24bb71cf-389f-40db-b915-ed2362bd3319",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-67998840",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "f58060df-4ef3-476a-8f6b-b6db942a1f7d",
+      "displayName": "Input Validation Error Message",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "736d039d-eea4-4995-83bf-3bd84a3e8caf",
+      "displayName": "Email Collector Scripted Decision Node",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "3d9d55c7-0a6e-410d-a89b-5fcd0243e65f",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    },
+    {
+      "_id": "26ab147e-ecc8-4922-a01f-1378feb9e5a0",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    },
+    {
+      "_id": "eb2d3751-7a5a-4904-a1df-1a122091f8c0",
+      "displayName": "Country Collector Scripted Decision",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "3b5b7c36-0f1b-4da7-86b6-6c387048fbbe",
+      "displayName": "Phone Collector Scripted Decision Node",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "ba891bee-4ebc-4ace-91fc-3239d6c37c7f",
+      "displayName": "Promotion Key Scripted Decision",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "4d3c9a04-ffa1-4e0f-8428-862b3aa259a7",
+      "displayName": "Marketing Consent Collector Scripted Decision",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "e8735519-a03f-4257-a2b0-71883a6427c0",
+      "displayName": "Data Privacy Collector Scripted Decision",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "384da2fb-cd07-49e0-a02c-9ba0d0e143a0",
+      "displayName": "Redirect URL Collector",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "d0994c0b-ef5e-4101-99b8-5ad03bfa913c",
+      "displayName": "Accept Terms and Conditions",
+      "nodeType": "AcceptTermsAndConditionsNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "Signing up is fast and easy.<br>Already have an account? <a href='#/service/Login'>Sign In</a>"
+  },
+  "pageHeader": {
+    "en": "Sign Up"
+  }
+}

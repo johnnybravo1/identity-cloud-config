@@ -1,0 +1,21 @@
+{
+  "_id": "085bc44f-3a3c-4c66-a03c-b8493eb35354",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "2122523764",
+  "_type": {
+    "_id": "OneTimePasswordSmtpSenderNode",
+    "collection": true,
+    "name": "OTP Email Sender"
+  },
+  "emailAttribute": "mail",
+  "emailContent": {},
+  "emailSubject": {},
+  "hostPort": 0,
+  "smsGatewayImplementationClass": "com.sun.identity.authentication.modules.hotp.DefaultSMSGatewayImpl",
+  "sslOption": "SSL"
+}

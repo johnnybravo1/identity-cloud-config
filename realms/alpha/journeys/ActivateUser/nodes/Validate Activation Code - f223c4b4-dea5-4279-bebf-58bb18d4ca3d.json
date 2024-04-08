@@ -1,0 +1,40 @@
+{
+  "_id": "f223c4b4-dea5-4279-bebf-58bb18d4ca3d",
+  "_outcomes": [
+    {
+      "displayName": "pass",
+      "id": "pass"
+    },
+    {
+      "displayName": "fail",
+      "id": "fail"
+    },
+    {
+      "displayName": "expired",
+      "id": "expired"
+    },
+    {
+      "displayName": "error",
+      "id": "error"
+    }
+  ],
+  "_rev": "-1554392528",
+  "_type": {
+    "_id": "ScriptedDecisionNode",
+    "collection": true,
+    "name": "Scripted Decision"
+  },
+  "inputs": [
+    "*"
+  ],
+  "outcomes": [
+    "pass",
+    "fail",
+    "expired",
+    "error"
+  ],
+  "outputs": [
+    "*"
+  ],
+  "script": "39863f83-6ad4-4745-b928-c91967ceb090"
+}
