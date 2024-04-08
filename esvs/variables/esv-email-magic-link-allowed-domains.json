@@ -1,0 +1,6 @@
+{
+  "_id": "esv-email-magic-link-allowed-domains",
+  "description": "",
+  "expressionType": "array",
+  "valueBase64": "${ESV_EMAIL_MAGIC_LINK_ALLOWED_DOMAINS}"
+}

@@ -1,0 +1,6 @@
+{
+  "_id": "esv-email-login-magic-link-expiry",
+  "description": "",
+  "expressionType": "string",
+  "valueBase64": "${ESV_EMAIL_LOGIN_MAGIC_LINK_EXPIRY}"
+}
