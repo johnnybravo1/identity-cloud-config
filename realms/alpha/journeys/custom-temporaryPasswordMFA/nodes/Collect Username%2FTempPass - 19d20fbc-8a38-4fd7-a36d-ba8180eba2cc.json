@@ -1,0 +1,29 @@
+{
+  "_id": "19d20fbc-8a38-4fd7-a36d-ba8180eba2cc",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1488410411",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "99da05e0-6b9e-480c-9a14-61b08f956814",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "8b5e5727-d74e-4389-aabe-2d3f0449b672",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

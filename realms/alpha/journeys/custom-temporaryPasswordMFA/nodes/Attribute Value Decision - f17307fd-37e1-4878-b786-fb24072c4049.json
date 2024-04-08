@@ -1,0 +1,22 @@
+{
+  "_id": "f17307fd-37e1-4878-b786-fb24072c4049",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "501297580",
+  "_type": {
+    "_id": "AttributeValueDecisionNode",
+    "collection": true,
+    "name": "Attribute Value Decision"
+  },
+  "comparisonAttribute": "frUnindexedstring1",
+  "comparisonOperation": "EQUALS",
+  "identityAttribute": "frUnindexedstring1"
+}
