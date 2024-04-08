@@ -1,0 +1,29 @@
+{
+  "_id": "291c8088-73e8-47b5-86f7-7f9d47b9b55f",
+  "_outcomes": [
+    {
+      "displayName": "Success",
+      "id": "successOutcome"
+    },
+    {
+      "displayName": "Failure",
+      "id": "failureOutcome"
+    },
+    {
+      "displayName": "Time Out",
+      "id": "timeoutOutcome"
+    }
+  ],
+  "_rev": "-489550574",
+  "_type": {
+    "_id": "PushRegistrationNode",
+    "collection": true,
+    "name": "Push Registration"
+  },
+  "accountName": "USERNAME",
+  "bgColor": "032b75",
+  "generateRecoveryCodes": true,
+  "issuer": "ForgeRock",
+  "scanQRCodeMessage": {},
+  "timeout": 60
+}

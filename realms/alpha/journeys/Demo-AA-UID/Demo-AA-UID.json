@@ -1,0 +1,150 @@
+{
+  "_id": "Demo-AA-UID",
+  "_rev": "-84178181",
+  "enabled": true,
+  "entryNodeId": "d109f794-f656-47b9-a5fc-8d8b7c544f62",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "022d05a7-13fc-4656-a98a-e74d5deff1c8": {
+      "connections": {
+        "false": "1c78d8ce-42ab-4335-808d-44c24455fe5d",
+        "true": "99943107-abdd-4d70-9f34-6836b454fe15"
+      },
+      "displayName": "Send to: Push MFA",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 1176,
+      "y": 47.5
+    },
+    "1c78d8ce-42ab-4335-808d-44c24455fe5d": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Autonomous Access Result",
+      "nodeType": "AutonomousAccessResultNode",
+      "x": 1387,
+      "y": 332
+    },
+    "21cea6db-b09d-4361-b4f9-2086e0558772": {
+      "connections": {
+        "false": "8c9263a8-80d0-44a5-9353-8827c2b6e553",
+        "true": "8c9263a8-80d0-44a5-9353-8827c2b6e553"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 215,
+      "y": 534.015625
+    },
+    "30cbb08b-bc88-4a38-aee1-30b4c2e42ac1": {
+      "connections": {
+        "outcome": "ea360e6f-8b44-4fb9-8f8f-9c0a4ba04ef9"
+      },
+      "displayName": "Autonomous Access Signal",
+      "nodeType": "AutonomousAccessSignalNode",
+      "x": 531,
+      "y": 286.5
+    },
+    "51c5c814-f37b-41da-afef-241fe6f50afb": {
+      "connections": {
+        "true": "aad884be-fba1-4885-916e-49adbab9aeb7"
+      },
+      "displayName": "Swap username for uid",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 521.1428571428571,
+      "y": 560.3080357142858
+    },
+    "5d3818d6-3461-4711-8e6c-7d2936ffb4e8": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Autonomous Access Result",
+      "nodeType": "AutonomousAccessResultNode",
+      "x": 1389,
+      "y": 256
+    },
+    "8c9263a8-80d0-44a5-9353-8827c2b6e553": {
+      "connections": {
+        "true": "30cbb08b-bc88-4a38-aee1-30b4c2e42ac1"
+      },
+      "displayName": "Swap username for uid",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 530,
+      "y": 133.015625
+    },
+    "99943107-abdd-4d70-9f34-6836b454fe15": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Autonomous Access Result",
+      "nodeType": "AutonomousAccessResultNode",
+      "x": 1394,
+      "y": 186.015625
+    },
+    "aad884be-fba1-4885-916e-49adbab9aeb7": {
+      "connections": {
+        "outcome": "1c78d8ce-42ab-4335-808d-44c24455fe5d"
+      },
+      "displayName": "Autonomous Access Signal",
+      "nodeType": "AutonomousAccessSignalNode",
+      "x": 879,
+      "y": 490.015625
+    },
+    "c29b7f53-994b-465c-b95e-87758fe5a53b": {
+      "connections": {
+        "high": "1c78d8ce-42ab-4335-808d-44c24455fe5d",
+        "low": "5d3818d6-3461-4711-8e6c-7d2936ffb4e8",
+        "medium": "022d05a7-13fc-4656-a98a-e74d5deff1c8",
+        "unknown": "022d05a7-13fc-4656-a98a-e74d5deff1c8"
+      },
+      "displayName": "Autonomous Access Decision",
+      "nodeType": "AutonomousAccessDecisionNode",
+      "x": 859,
+      "y": 221.5
+    },
+    "c4b07194-2d8a-491e-bc6e-86cb06ca6727": {
+      "connections": {
+        "false": "51c5c814-f37b-41da-afef-241fe6f50afb",
+        "true": "21cea6db-b09d-4361-b4f9-2086e0558772"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 212,
+      "y": 350.5
+    },
+    "d109f794-f656-47b9-a5fc-8d8b7c544f62": {
+      "connections": {
+        "outcome": "c4b07194-2d8a-491e-bc6e-86cb06ca6727"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 201.5,
+      "y": 90.30803571428572
+    },
+    "ea360e6f-8b44-4fb9-8f8f-9c0a4ba04ef9": {
+      "connections": {
+        "true": "c29b7f53-994b-465c-b95e-87758fe5a53b"
+      },
+      "displayName": "Revert to username",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 520,
+      "y": 458.015625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1811,
+      "y": 201
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1821,
+      "y": 317
+    },
+    "startNode": {
+      "x": 70,
+      "y": 155
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Fraud\"]"
+  }
+}

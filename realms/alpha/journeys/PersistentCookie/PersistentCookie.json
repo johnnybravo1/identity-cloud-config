@@ -1,0 +1,103 @@
+{
+  "_id": "PersistentCookie",
+  "_rev": "989223546",
+  "description": "Platform Login Tree",
+  "enabled": true,
+  "entryNodeId": "0bcec811-359e-4ab7-a91a-c65ab088c791",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "0bcec811-359e-4ab7-a91a-c65ab088c791": {
+      "connections": {
+        "false": "e07318e5-d851-4e69-bf10-b9f0e6422c29",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Persistent Cookie Decision",
+      "nodeType": "PersistentCookieDecisionNode",
+      "x": 72,
+      "y": 345.76666259765625
+    },
+    "1757ebd0-5a78-42eb-aff6-05d6a3b90a27": {
+      "connections": {
+        "false": "c2c83b46-c815-4d95-bf12-913b9d7d669d",
+        "true": "6c3e28cf-544d-42ab-a057-7a7c6f3097ae"
+      },
+      "displayName": "Terms and Conditions Decision",
+      "nodeType": "TermsAndConditionsDecisionNode",
+      "x": 756,
+      "y": 589.7666625976562
+    },
+    "32b15b4d-4257-457e-bd04-d2c68fbe56a2": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "7ff957a3-ef3a-4761-9322-91def508a6cc"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 315,
+      "y": 140
+    },
+    "5ca674b6-2ab2-4883-be7a-9297df9a5847": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Set Persistent Cookie",
+      "nodeType": "SetPersistentCookieNode",
+      "x": 879,
+      "y": 375.76666259765625
+    },
+    "6c3e28cf-544d-42ab-a057-7a7c6f3097ae": {
+      "connections": {
+        "outcome": "5ca674b6-2ab2-4883-be7a-9297df9a5847"
+      },
+      "displayName": "Increment Login Count",
+      "nodeType": "IncrementLoginCountNode",
+      "x": 564,
+      "y": 132
+    },
+    "7ff957a3-ef3a-4761-9322-91def508a6cc": {
+      "connections": {
+        "true": "6c3e28cf-544d-42ab-a057-7a7c6f3097ae"
+      },
+      "displayName": "IP Collector",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 314,
+      "y": 314.76666259765625
+    },
+    "c2c83b46-c815-4d95-bf12-913b9d7d669d": {
+      "connections": {
+        "outcome": "6c3e28cf-544d-42ab-a057-7a7c6f3097ae"
+      },
+      "displayName": "Accept Terms and Conditions",
+      "nodeType": "AcceptTermsAndConditionsNode",
+      "x": 552,
+      "y": 451.76666259765625
+    },
+    "e07318e5-d851-4e69-bf10-b9f0e6422c29": {
+      "connections": {
+        "outcome": "32b15b4d-4257-457e-bd04-d2c68fbe56a2"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 136,
+      "y": 59
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1008,
+      "y": 186
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 624,
+      "y": 267
+    },
+    "startNode": {
+      "x": 50,
+      "y": 25
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Authentication\"]"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "_id": "IDMRESTCallExample",
+  "_rev": "622242904",
+  "enabled": true,
+  "entryNodeId": "77d43f44-c970-4f3e-83ae-fc35a342516f",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "0ed08826-0691-4b9a-ba70-4700b59537b3": {
+      "connections": {
+        "true": "f455588a-3c64-4373-9dd3-f1f03b6a3579"
+      },
+      "displayName": "Get User Mail",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 315,
+      "y": 548.7666625976562
+    },
+    "141d1233-cc96-491d-b090-c41c51d73057": {
+      "connections": {
+        "true": "fe452c17-a952-4a00-bb11-52171ccda2ad"
+      },
+      "displayName": "Debug Shared State",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 533,
+      "y": 513.7666625976562
+    },
+    "77d43f44-c970-4f3e-83ae-fc35a342516f": {
+      "connections": {
+        "outcome": "ee599bef-4a7c-4580-a571-ab62dca3ed1e"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 144,
+      "y": 124.76666259765625
+    },
+    "9bea5cfd-6b00-488f-8469-8770519f0c19": {
+      "connections": {
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 814,
+      "y": 245.76666259765625
+    },
+    "ee599bef-4a7c-4580-a571-ab62dca3ed1e": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "0ed08826-0691-4b9a-ba70-4700b59537b3"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 254,
+      "y": 240.76666259765625
+    },
+    "f455588a-3c64-4373-9dd3-f1f03b6a3579": {
+      "connections": {
+        "outcome": "141d1233-cc96-491d-b090-c41c51d73057"
+      },
+      "displayName": "HOTP Generator",
+      "nodeType": "OneTimePasswordGeneratorNode",
+      "x": 272,
+      "y": 731.7666625976562
+    },
+    "fe452c17-a952-4a00-bb11-52171ccda2ad": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "9bea5cfd-6b00-488f-8469-8770519f0c19"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 497,
+      "y": 196.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

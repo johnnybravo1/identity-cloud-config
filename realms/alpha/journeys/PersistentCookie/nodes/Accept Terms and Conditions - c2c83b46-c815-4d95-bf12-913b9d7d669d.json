@@ -1,0 +1,15 @@
+{
+  "_id": "c2c83b46-c815-4d95-bf12-913b9d7d669d",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-265374552",
+  "_type": {
+    "_id": "AcceptTermsAndConditionsNode",
+    "collection": true,
+    "name": "Accept Terms and Conditions"
+  }
+}

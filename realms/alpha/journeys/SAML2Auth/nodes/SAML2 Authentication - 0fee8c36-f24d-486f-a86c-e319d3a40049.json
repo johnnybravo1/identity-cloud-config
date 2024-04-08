@@ -1,0 +1,30 @@
+{
+  "_id": "0fee8c36-f24d-486f-a86c-e319d3a40049",
+  "_outcomes": [
+    {
+      "displayName": "Account exists",
+      "id": "ACCOUNT_EXISTS"
+    },
+    {
+      "displayName": "No account exists",
+      "id": "NO_ACCOUNT"
+    }
+  ],
+  "_rev": "-1968943897",
+  "_type": {
+    "_id": "product-Saml2Node",
+    "collection": true,
+    "name": "SAML2 Authentication"
+  },
+  "allowCreate": true,
+  "authComparison": "EXACT",
+  "authnContextClassRef": [],
+  "authnContextDeclRef": [],
+  "binding": "HTTP_POST",
+  "forceAuthn": false,
+  "idpEntityId": "https://sts.windows.net/0ebd7205-a935-4434-8266-74ae50d13e86/",
+  "isPassive": false,
+  "metaAlias": "/alpha/FRSP",
+  "nameIdFormat": "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+  "requestBinding": "HTTP_POST"
+}

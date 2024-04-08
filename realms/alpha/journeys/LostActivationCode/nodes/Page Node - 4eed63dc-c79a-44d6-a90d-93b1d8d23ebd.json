@@ -1,0 +1,28 @@
+{
+  "_id": "4eed63dc-c79a-44d6-a90d-93b1d8d23ebd",
+  "_outcomes": [
+    {
+      "displayName": "Done",
+      "id": "DONE"
+    }
+  ],
+  "_rev": "1789594593",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "f385c837-5c8d-4108-a3ee-cad3611a9c81",
+      "displayName": "Polling Wait Node",
+      "nodeType": "PollingWaitNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {
+    "en": "You requested a new activation link",
+    "fr": "Vous avez demandé un nouveau lien d'activation",
+    "fr-fr": "Vous avez demandé un nouveau lien d'activation"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "ForgottenUsernameExample",
+  "_rev": "-154704420",
+  "description": "Forgotten Username Tree",
+  "enabled": true,
+  "entryNodeId": "56c04eea-8492-48e3-96dd-79d6da655c00",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "4cb949c2-9050-4ed7-bb73-321b67a7de47": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "552e5409-dd23-4d0b-8711-ee0cc781c344"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 409,
+      "y": 195
+    },
+    "552e5409-dd23-4d0b-8711-ee0cc781c344": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Display Username",
+      "nodeType": "PageNode",
+      "x": 722,
+      "y": 101.76666259765625
+    },
+    "56c04eea-8492-48e3-96dd-79d6da655c00": {
+      "connections": {
+        "outcome": "4cb949c2-9050-4ed7-bb73-321b67a7de47"
+      },
+      "displayName": "Collect Email",
+      "nodeType": "PageNode",
+      "x": 139,
+      "y": 146
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 970,
+      "y": 149
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 982,
+      "y": 252
+    },
+    "startNode": {
+      "x": 50,
+      "y": 25
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Username Reset\"]"
+  }
+}

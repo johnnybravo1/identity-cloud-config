@@ -1,0 +1,35 @@
+{
+  "_id": "a6c5c687-32c9-4d29-8d6d-446beca0d4ec",
+  "_outcomes": [
+    {
+      "displayName": "update",
+      "id": "update"
+    },
+    {
+      "displayName": "create",
+      "id": "create"
+    },
+    {
+      "displayName": "missing",
+      "id": "missing"
+    }
+  ],
+  "_rev": "1347799988",
+  "_type": {
+    "_id": "ScriptedDecisionNode",
+    "collection": true,
+    "name": "Scripted Decision"
+  },
+  "inputs": [
+    "*"
+  ],
+  "outcomes": [
+    "update",
+    "create",
+    "missing"
+  ],
+  "outputs": [
+    "*"
+  ],
+  "script": "184198c7-8c48-457a-8602-868c9ce57bf3"
+}

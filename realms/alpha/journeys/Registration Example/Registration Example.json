@@ -1,0 +1,114 @@
+{
+  "_id": "Registration Example",
+  "_rev": "1553245060",
+  "description": "Platform Registration Tree",
+  "enabled": true,
+  "entryNodeId": "24bb71cf-389f-40db-b915-ed2362bd3319",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "24bb71cf-389f-40db-b915-ed2362bd3319": {
+      "connections": {
+        "outcome": "a1826aa1-3676-4f22-b50d-ab144a91b884"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 197,
+      "y": 32
+    },
+    "2e7c994d-8044-40b2-87e9-50e7042cf81a": {
+      "connections": {
+        "CREATED": "63d3e894-83d5-49ef-bba7-74bf5c98ea8f",
+        "FAILURE": "bdcee9dc-10e2-4415-b14f-a549f4c2b8ab"
+      },
+      "displayName": "Create Object",
+      "nodeType": "CreateObjectNode",
+      "x": 729,
+      "y": 37.3203125
+    },
+    "434392ef-65cf-47f7-a0fe-5b3d80612fb8": {
+      "connections": {
+        "error": "24bb71cf-389f-40db-b915-ed2362bd3319",
+        "success": "2e7c994d-8044-40b2-87e9-50e7042cf81a"
+      },
+      "displayName": "Create Account - Account Management API",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 409,
+      "y": 31.3203125
+    },
+    "4cf6b1cf-4551-456b-91f9-144453b00ebf": {
+      "connections": {
+        "false": "434392ef-65cf-47f7-a0fe-5b3d80612fb8",
+        "true": "b957f742-9394-4de3-9bcb-a3a714683855"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 433,
+      "y": 521
+    },
+    "63d3e894-83d5-49ef-bba7-74bf5c98ea8f": {
+      "connections": {
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 941.75,
+      "y": 232.3203125
+    },
+    "a1826aa1-3676-4f22-b50d-ab144a91b884": {
+      "connections": {
+        "false": "24bb71cf-389f-40db-b915-ed2362bd3319",
+        "true": "4cf6b1cf-4551-456b-91f9-144453b00ebf"
+      },
+      "displayName": "Input Validation Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 224,
+      "y": 743.3203125
+    },
+    "b957f742-9394-4de3-9bcb-a3a714683855": {
+      "connections": {
+        "true": "24bb71cf-389f-40db-b915-ed2362bd3319"
+      },
+      "displayName": "Set Error Email Exists",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 669.7999992370605,
+      "y": 554.2124938964844
+    },
+    "bdcee9dc-10e2-4415-b14f-a549f4c2b8ab": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "e140d710-96b9-4eeb-9a8a-e21c1df9ea1e"
+      },
+      "displayName": "Rollback Account",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 657,
+      "y": 212.76666259765625
+    },
+    "e140d710-96b9-4eeb-9a8a-e21c1df9ea1e": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Delete User Object",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 728,
+      "y": 376.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1183,
+      "y": 257
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 997,
+      "y": 90
+    },
+    "startNode": {
+      "x": 70,
+      "y": 175
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Registration\"]"
+  }
+}

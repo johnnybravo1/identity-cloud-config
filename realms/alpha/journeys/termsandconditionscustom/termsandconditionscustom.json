@@ -1,0 +1,55 @@
+{
+  "_id": "termsandconditionscustom",
+  "_rev": "573048045",
+  "enabled": true,
+  "entryNodeId": "587540c9-d60a-40ae-ac88-e6967c022975",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "587540c9-d60a-40ae-ac88-e6967c022975": {
+      "connections": {
+        "outcome": "c935cb68-667b-4128-9f38-7ffa5c3f5d9f"
+      },
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode",
+      "x": 149,
+      "y": 118.76666259765625
+    },
+    "c935cb68-667b-4128-9f38-7ffa5c3f5d9f": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "fc100c81-50da-460b-9216-8b99d483d70b"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 264,
+      "y": 234.76666259765625
+    },
+    "fc100c81-50da-460b-9216-8b99d483d70b": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Get IDM Access Token",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 501,
+      "y": 212.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

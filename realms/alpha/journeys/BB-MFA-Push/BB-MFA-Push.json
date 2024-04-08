@@ -1,0 +1,80 @@
+{
+  "_id": "BB-MFA-Push",
+  "_rev": "-1508064242",
+  "enabled": true,
+  "entryNodeId": "936a021f-e19a-41a7-bad7-424ccec55acc",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "291c8088-73e8-47b5-86f7-7f9d47b9b55f": {
+      "connections": {
+        "failureOutcome": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "successOutcome": "936a021f-e19a-41a7-bad7-424ccec55acc",
+        "timeoutOutcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Push Registration",
+      "nodeType": "PushRegistrationNode",
+      "x": 377,
+      "y": 390.015625
+    },
+    "3b3ecbf9-b788-44bf-8aef-71aba06590db": {
+      "connections": {
+        "DONE": "8ceb7da8-df95-49f1-ba1c-ff48bc4e9f30"
+      },
+      "displayName": "Polling Wait Node",
+      "nodeType": "PollingWaitNode",
+      "x": 943,
+      "y": 214.7357940673828
+    },
+    "8ceb7da8-df95-49f1-ba1c-ff48bc4e9f30": {
+      "connections": {
+        "Reject": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "Retry": "e78ffc01-7b2d-476c-8d00-cbb34dd7a9ed"
+      },
+      "displayName": "Retry Limit Decision",
+      "nodeType": "RetryLimitDecisionNode",
+      "x": 927,
+      "y": 322.7357940673828
+    },
+    "936a021f-e19a-41a7-bad7-424ccec55acc": {
+      "connections": {
+        "NOT_REGISTERED": "291c8088-73e8-47b5-86f7-7f9d47b9b55f",
+        "SENT": "e78ffc01-7b2d-476c-8d00-cbb34dd7a9ed",
+        "SKIPPED": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Push Sender",
+      "nodeType": "PushAuthenticationSenderNode",
+      "x": 259,
+      "y": 219.7357940673828
+    },
+    "e78ffc01-7b2d-476c-8d00-cbb34dd7a9ed": {
+      "connections": {
+        "EXPIRED": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "FALSE": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "TRUE": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "WAITING": "3b3ecbf9-b788-44bf-8aef-71aba06590db"
+      },
+      "displayName": "Push Result Verifier Node",
+      "nodeType": "PushResultVerifierNode",
+      "x": 516,
+      "y": 191.7357940673828
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 831,
+      "y": 17
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1043,
+      "y": 638
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "4cb949c2-9050-4ed7-bb73-321b67a7de47",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "1898835250",
+  "_type": {
+    "_id": "IdentifyExistingUserNode",
+    "collection": true,
+    "name": "Identify Existing User"
+  },
+  "identifier": "userName",
+  "identityAttribute": "mail"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "Login-LogoutOauth2Webhook",
+  "_rev": "854811531",
+  "enabled": true,
+  "entryNodeId": "b8182bd7-66d7-4655-9016-31a36787fdcb",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "264b2a97-d475-40a0-9622-6d21431e6c5d": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Register Logout Webhook",
+      "nodeType": "RegisterLogoutWebhookNode",
+      "x": 579.2999877929688,
+      "y": 78.76666259765625
+    },
+    "b8182bd7-66d7-4655-9016-31a36787fdcb": {
+      "connections": {
+        "outcome": "d4d0fdbc-a65c-42c8-84c4-10871f10e7a6"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 154,
+      "y": 46.76666259765625
+    },
+    "d4d0fdbc-a65c-42c8-84c4-10871f10e7a6": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "264b2a97-d475-40a0-9622-6d21431e6c5d"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 361,
+      "y": 202.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 878,
+      "y": 62
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 854,
+      "y": 436
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

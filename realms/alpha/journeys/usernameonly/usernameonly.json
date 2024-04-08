@@ -1,0 +1,125 @@
+{
+  "_id": "usernameonly",
+  "_rev": "1828076878",
+  "enabled": true,
+  "entryNodeId": "df19f908-057a-4549-8a82-a6529992c5b7",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "085bc44f-3a3c-4c66-a03c-b8493eb35354": {
+      "connections": {},
+      "displayName": "OTP Email Sender",
+      "nodeType": "OneTimePasswordSmtpSenderNode",
+      "x": 470,
+      "y": 808.7666625976562
+    },
+    "3eb2c469-a9eb-4182-bc39-d319dcea1444": {
+      "connections": {
+        "outcome": "49387010-5ac7-4bba-a576-49e479220dbd"
+      },
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode",
+      "x": 401,
+      "y": 165.76666259765625
+    },
+    "42fe1dd7-81af-4440-90ff-81aedbf30122": {
+      "connections": {
+        "outcome": "085bc44f-3a3c-4c66-a03c-b8493eb35354"
+      },
+      "displayName": "HOTP Generator",
+      "nodeType": "OneTimePasswordGeneratorNode",
+      "x": 210,
+      "y": 535.7666625976562
+    },
+    "49387010-5ac7-4bba-a576-49e479220dbd": {
+      "connections": {
+        "outcome": "7af60dde-cbce-45a5-8739-c193c9e0b3b7"
+      },
+      "displayName": "Password Collector",
+      "nodeType": "PasswordCollectorNode",
+      "x": 248,
+      "y": 443.76666259765625
+    },
+    "52229d1d-f01b-4b17-bc5a-fc4222519605": {
+      "connections": {},
+      "displayName": "Polling Wait Node",
+      "nodeType": "PollingWaitNode",
+      "x": 698,
+      "y": 564.7666625976562
+    },
+    "7af60dde-cbce-45a5-8739-c193c9e0b3b7": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 465,
+      "y": 383.76666259765625
+    },
+    "8f6580bd-e43d-4aeb-8419-82d34908da3a": {
+      "connections": {
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 984,
+      "y": 81.76666259765625
+    },
+    "99d16a90-4605-4183-b2eb-8eab12f3e8af": {
+      "connections": {
+        "outcome": "8f6580bd-e43d-4aeb-8419-82d34908da3a"
+      },
+      "displayName": "Email Suspend Node",
+      "nodeType": "EmailSuspendNode",
+      "x": 802,
+      "y": 209.76666259765625
+    },
+    "df19f908-057a-4549-8a82-a6529992c5b7": {
+      "connections": {
+        "false": "3eb2c469-a9eb-4182-bc39-d319dcea1444",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "CheckHeader",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 153,
+      "y": 108.015625
+    },
+    "f1cbaf5d-110d-4d1e-8066-1df68030a015": {
+      "connections": {
+        "true": "99d16a90-4605-4183-b2eb-8eab12f3e8af"
+      },
+      "displayName": "Message Node",
+      "nodeType": "MessageNode",
+      "x": 951,
+      "y": 363.76666259765625
+    },
+    "fa4cbd51-e7df-4120-b2c5-4a8b9ca19878": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 766,
+      "y": 8.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 627,
+      "y": 51
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 676,
+      "y": 330
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

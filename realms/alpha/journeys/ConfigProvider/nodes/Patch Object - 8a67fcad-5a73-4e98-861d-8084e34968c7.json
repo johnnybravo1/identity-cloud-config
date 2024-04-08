@@ -1,0 +1,23 @@
+{
+  "_id": "8a67fcad-5a73-4e98-861d-8084e34968c7",
+  "_outcomes": [
+    {
+      "displayName": "Patched",
+      "id": "PATCHED"
+    },
+    {
+      "displayName": "Failed",
+      "id": "FAILURE"
+    }
+  ],
+  "_rev": "-1853706325",
+  "_type": {
+    "_id": "PatchObjectNode",
+    "collection": true,
+    "name": "Patch Object"
+  },
+  "identityAttribute": "userName",
+  "identityResource": "managed/user",
+  "ignoredFields": [],
+  "patchAsObject": false
+}

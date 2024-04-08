@@ -1,0 +1,35 @@
+{
+  "_id": "9761feae-1412-4b28-be9d-d9758f7402db",
+  "_outcomes": [
+    {
+      "displayName": "present",
+      "id": "present"
+    },
+    {
+      "displayName": "absent",
+      "id": "absent"
+    },
+    {
+      "displayName": "error",
+      "id": "error"
+    }
+  ],
+  "_rev": "-444799254",
+  "_type": {
+    "_id": "ScriptedDecisionNode",
+    "collection": true,
+    "name": "Scripted Decision"
+  },
+  "inputs": [
+    "*"
+  ],
+  "outcomes": [
+    "present",
+    "absent",
+    "error"
+  ],
+  "outputs": [
+    "*"
+  ],
+  "script": "a1fb3e28-6405-4a77-91e6-da884cec09b5"
+}

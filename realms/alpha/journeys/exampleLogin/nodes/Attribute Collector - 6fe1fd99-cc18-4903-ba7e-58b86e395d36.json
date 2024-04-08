@@ -1,0 +1,22 @@
+{
+  "_id": "6fe1fd99-cc18-4903-ba7e-58b86e395d36",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-1498927929",
+  "_type": {
+    "_id": "AttributeCollectorNode",
+    "collection": true,
+    "name": "Attribute Collector"
+  },
+  "attributesToCollect": [
+    "userName",
+    "password"
+  ],
+  "identityAttribute": "userName",
+  "required": true,
+  "validateInputs": false
+}

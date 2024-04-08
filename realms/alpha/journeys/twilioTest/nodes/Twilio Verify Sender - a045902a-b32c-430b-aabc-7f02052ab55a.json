@@ -1,0 +1,24 @@
+{
+  "_id": "a045902a-b32c-430b-aabc-7f02052ab55a",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "Error",
+      "id": "error"
+    }
+  ],
+  "_rev": "1708310370",
+  "_type": {
+    "_id": "VerifyAuthSenderNode",
+    "collection": true,
+    "name": "Twilio Verify Sender"
+  },
+  "accountSID": "&{esv.twilio.account.sid}",
+  "channel": "SMS",
+  "identifierSharedState": "userIdentifier",
+  "requestIdentifier": false,
+  "serviceSID": "&{esv.twilio.service.sid}"
+}

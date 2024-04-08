@@ -1,0 +1,99 @@
+{
+  "_id": "DynamicOTPEmail",
+  "_rev": "-1361597826",
+  "enabled": true,
+  "entryNodeId": "4ce4e8d0-ca63-4955-ac18-241b2ca0e571",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "1a55a647-e5e7-40ce-9b90-72fe2fa1dfe3": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "1e7dafa2-173a-4f49-babd-42f6431cc55b"
+      },
+      "displayName": "send Email",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 497,
+      "y": 196.76666259765625
+    },
+    "1e7dafa2-173a-4f49-babd-42f6431cc55b": {
+      "connections": {
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 814,
+      "y": 245.76666259765625
+    },
+    "437b6dfe-300a-4304-a154-bfce2f4bcf95": {
+      "connections": {},
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 777,
+      "y": 722.7666625976562
+    },
+    "4ce4e8d0-ca63-4955-ac18-241b2ca0e571": {
+      "connections": {
+        "outcome": "908669bf-9c1c-491e-8618-15786f353209"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 144,
+      "y": 124.76666259765625
+    },
+    "712fa7cb-1407-4fa3-b582-cc3511417af0": {
+      "connections": {
+        "true": "1a55a647-e5e7-40ce-9b90-72fe2fa1dfe3"
+      },
+      "displayName": "Debug Shared State",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 533,
+      "y": 513.7666625976562
+    },
+    "7af73468-21f4-44f3-a163-bdf7b8db592b": {
+      "connections": {
+        "outcome": "712fa7cb-1407-4fa3-b582-cc3511417af0"
+      },
+      "displayName": "HOTP Generator",
+      "nodeType": "OneTimePasswordGeneratorNode",
+      "x": 272,
+      "y": 731.7666625976562
+    },
+    "908669bf-9c1c-491e-8618-15786f353209": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "92f1d847-a2ac-4ed7-b178-35a318b07e39"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 254,
+      "y": 240.76666259765625
+    },
+    "92f1d847-a2ac-4ed7-b178-35a318b07e39": {
+      "connections": {
+        "true": "7af73468-21f4-44f3-a163-bdf7b8db592b"
+      },
+      "displayName": "Get User Mail",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 315,
+      "y": 548.7666625976562
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

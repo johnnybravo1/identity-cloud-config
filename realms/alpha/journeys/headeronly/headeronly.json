@@ -1,0 +1,65 @@
+{
+  "_id": "headeronly",
+  "_rev": "-1623089621",
+  "enabled": true,
+  "entryNodeId": "989bfdc8-fdcd-4edf-9b7d-8ad5b4c0bc4b",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "989bfdc8-fdcd-4edf-9b7d-8ad5b4c0bc4b": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "dfce80ba-6ce0-49ae-bd62-f23d7d14824b"
+      },
+      "displayName": "CheckHeader",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 153,
+      "y": 108.015625
+    },
+    "a79a8be8-3be2-4eac-bd74-a92cd44012f0": {
+      "connections": {
+        "outcome": "d23145db-443a-48ea-a498-0e0372e3d9e2"
+      },
+      "displayName": "Password Collector",
+      "nodeType": "PasswordCollectorNode",
+      "x": 558,
+      "y": 422.76666259765625
+    },
+    "d23145db-443a-48ea-a498-0e0372e3d9e2": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 668,
+      "y": 137.76666259765625
+    },
+    "dfce80ba-6ce0-49ae-bd62-f23d7d14824b": {
+      "connections": {
+        "outcome": "a79a8be8-3be2-4eac-bd74-a92cd44012f0"
+      },
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode",
+      "x": 428,
+      "y": 74.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1032,
+      "y": 75
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1014,
+      "y": 450
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

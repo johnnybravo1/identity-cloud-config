@@ -1,0 +1,25 @@
+{
+  "_id": "44c745fc-e6de-4274-8dc9-457a8f7f1daf",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "True"
+    },
+    {
+      "displayName": "False",
+      "id": "False"
+    },
+    {
+      "displayName": "Error",
+      "id": "Error"
+    }
+  ],
+  "_rev": "598517238",
+  "_type": {
+    "_id": "VerifyAuthIdentifierNode",
+    "collection": true,
+    "name": "Twilio Identifier"
+  },
+  "identifierAttribute": "telephoneNumber",
+  "identifierSharedState": "userIdentifier"
+}

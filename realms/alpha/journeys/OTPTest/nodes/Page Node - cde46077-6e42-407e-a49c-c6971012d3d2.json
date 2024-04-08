@@ -1,0 +1,29 @@
+{
+  "_id": "cde46077-6e42-407e-a49c-c6971012d3d2",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-507985001",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "48bccc42-6832-491d-92df-e1822ea49a6b",
+      "displayName": "OTP Expired",
+      "nodeType": "MessageNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {},
+  "stage": "{\"ConfirmationCallback\":[{\"id\":\"48bccc42-6832-491d-92df-e1822ea49a6b\",\"showOnlyPositiveAnswer\":true}]}"
+}

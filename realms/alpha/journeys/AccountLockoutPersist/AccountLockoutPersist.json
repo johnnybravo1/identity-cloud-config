@@ -1,0 +1,46 @@
+{
+  "_id": "AccountLockoutPersist",
+  "_rev": "1495960439",
+  "enabled": true,
+  "entryNodeId": "201e70ea-0de3-4869-9b30-0ff792a17f38",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "201e70ea-0de3-4869-9b30-0ff792a17f38": {
+      "connections": {
+        "outcome": "377664a1-e3f2-4c91-b28a-498c364b4421"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 167,
+      "y": 94.76666259765625
+    },
+    "377664a1-e3f2-4c91-b28a-498c364b4421": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 456,
+      "y": 158.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 719,
+      "y": 51
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 731,
+      "y": 358
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "_id": "apiCallTest",
+  "_rev": "1999061831",
+  "enabled": true,
+  "entryNodeId": "9761feae-1412-4b28-be9d-d9758f7402db",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "23716709-0b42-40e1-abf4-032b7e8a3a08": {
+      "connections": {
+        "outcome": "95079e6c-bfbf-4f77-b439-e47e2cf11e18"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 435,
+      "y": 155.76666259765625
+    },
+    "2c389dea-dfa5-4d95-a18f-1bc53c6e2785": {
+      "connections": {
+        "false": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1490,
+      "y": 183
+    },
+    "608be094-349f-41b2-81cc-957d7a9272da": {
+      "connections": {
+        "outcome": "2c389dea-dfa5-4d95-a18f-1bc53c6e2785"
+      },
+      "displayName": "HOTP Generator",
+      "nodeType": "OneTimePasswordGeneratorNode",
+      "x": 1259,
+      "y": 115.66666666666666
+    },
+    "89412054-c236-4fe8-839b-4a369fa3b432": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "608be094-349f-41b2-81cc-957d7a9272da"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 825,
+      "y": 572
+    },
+    "95079e6c-bfbf-4f77-b439-e47e2cf11e18": {
+      "connections": {
+        "outcome": "b88d70ab-cd79-4111-8d68-35e52a815879"
+      },
+      "displayName": "Password Collector",
+      "nodeType": "PasswordCollectorNode",
+      "x": 600,
+      "y": 264.76666259765625
+    },
+    "9761feae-1412-4b28-be9d-d9758f7402db": {
+      "connections": {
+        "absent": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "present": "23716709-0b42-40e1-abf4-032b7e8a3a08"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 173,
+      "y": 279.76666259765625
+    },
+    "b88d70ab-cd79-4111-8d68-35e52a815879": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "89412054-c236-4fe8-839b-4a369fa3b432"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 435,
+      "y": 476.6666666666667
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1719,
+      "y": 201
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1259,
+      "y": 232.83333333333334
+    },
+    "startNode": {
+      "x": 70,
+      "y": 322
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

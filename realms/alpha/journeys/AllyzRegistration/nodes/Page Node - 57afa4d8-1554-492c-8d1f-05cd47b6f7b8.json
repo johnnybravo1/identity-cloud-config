@@ -1,0 +1,24 @@
+{
+  "_id": "57afa4d8-1554-492c-8d1f-05cd47b6f7b8",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    }
+  ],
+  "_rev": "-846707562",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "767cd07f-4ea7-45f3-a3de-f9c58389e41e",
+      "displayName": "Display Email Sent Confirmation",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

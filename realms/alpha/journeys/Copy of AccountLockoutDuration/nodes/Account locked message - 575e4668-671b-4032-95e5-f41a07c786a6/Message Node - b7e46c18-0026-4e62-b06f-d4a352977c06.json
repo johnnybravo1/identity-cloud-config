@@ -1,0 +1,24 @@
+{
+  "_id": "b7e46c18-0026-4e62-b06f-d4a352977c06",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "1213139555",
+  "_type": {
+    "_id": "MessageNode",
+    "collection": true,
+    "name": "Message Node"
+  },
+  "message": {
+    "en": "Your account is locked"
+  },
+  "messageNo": {},
+  "messageYes": {}
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "d3fcb241-8d37-4e29-8169-49811df8bfef",
+  "_outcomes": [
+    {
+      "displayName": "Sent",
+      "id": "SENT"
+    },
+    {
+      "displayName": "Not Registered",
+      "id": "NOT_REGISTERED"
+    },
+    {
+      "displayName": "Skipped",
+      "id": "SKIPPED"
+    }
+  ],
+  "_rev": "-1226179046",
+  "_type": {
+    "_id": "PushAuthenticationSenderNode",
+    "collection": true,
+    "name": "Push Sender"
+  },
+  "captureFailure": false,
+  "contextInfo": true,
+  "customPayload": [
+    "userid"
+  ],
+  "mandatory": false,
+  "messageTimeout": 120000,
+  "pushType": "BIOMETRIC",
+  "userMessage": {}
+}

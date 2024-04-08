@@ -1,0 +1,34 @@
+{
+  "_id": "791d3408-62ae-4a0c-82c3-4483d7ba300c",
+  "_outcomes": [
+    {
+      "displayName": "true",
+      "id": "true"
+    }
+  ],
+  "_rev": "834618394",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "2e817bd4-daef-463d-96bb-d28ad602d777",
+      "displayName": "Email Validation Error Message",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "f02aa084-f3e7-4d52-bc2c-f8cf64ca4f94",
+      "displayName": "Email Collector",
+      "nodeType": "ScriptedDecisionNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {
+    "en": "Get Activation Email",
+    "fr": "Obtenir un e-mail d'activation",
+    "fr-fr": "Obtenir un e-mail d'activation"
+  },
+  "stage": "{\"submitButtonText\":{\"en\":\"Get Activation Email\",\"fr\":\"Obtenir un e-mail d'activation\",\"fr-fr\":\"Obtenir un e-mail d'activation\"}}"
+}

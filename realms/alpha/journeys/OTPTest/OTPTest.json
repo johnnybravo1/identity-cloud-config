@@ -1,0 +1,121 @@
+{
+  "_id": "OTPTest",
+  "_rev": "-1958510887",
+  "enabled": true,
+  "entryNodeId": "3abf3377-4012-42ef-8c17-4dce718789c7",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "191f1033-295d-4f2f-b18f-2bfd3d0d315d": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "4e214e56-ae2a-4cff-835a-42fa3326b7ec"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 523,
+      "y": 422
+    },
+    "3abf3377-4012-42ef-8c17-4dce718789c7": {
+      "connections": {
+        "outcome": "191f1033-295d-4f2f-b18f-2bfd3d0d315d"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 288,
+      "y": 451.76666259765625
+    },
+    "4e214e56-ae2a-4cff-835a-42fa3326b7ec": {
+      "connections": {
+        "outcome": "e8afe281-eb22-47a3-8c63-619d55bc0c75"
+      },
+      "displayName": "HOTP Generator",
+      "nodeType": "OneTimePasswordGeneratorNode",
+      "x": 317,
+      "y": 197.5
+    },
+    "51391396-892b-45d9-9ad0-f1bce4a6e72a": {
+      "connections": {
+        "outcome": "bc0ff80f-1c85-424a-a464-c06dcf8b1605"
+      },
+      "displayName": "OTP Email Sender",
+      "nodeType": "OneTimePasswordSmtpSenderNode",
+      "x": 547,
+      "y": 197.5
+    },
+    "591a9899-f87a-41f0-8845-531d980358af": {
+      "connections": {
+        "false": "fa0e36ef-55c9-4661-9431-8d3358405038",
+        "true": "bc0ff80f-1c85-424a-a464-c06dcf8b1605"
+      },
+      "displayName": "OTP Age Check",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 944,
+      "y": 594.7666625976562
+    },
+    "87167aa7-69a1-4ea6-a6f4-6c775fc1bbfb": {
+      "connections": {
+        "Reject": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "Retry": "bc0ff80f-1c85-424a-a464-c06dcf8b1605"
+      },
+      "displayName": "Retry Limit Decision",
+      "nodeType": "RetryLimitDecisionNode",
+      "x": 836,
+      "y": 25.66666666666667
+    },
+    "bc0ff80f-1c85-424a-a464-c06dcf8b1605": {
+      "connections": {
+        "false": "591a9899-f87a-41f0-8845-531d980358af",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "OTP Collector Decision",
+      "nodeType": "OneTimePasswordCollectorDecisionNode",
+      "x": 839,
+      "y": 208.5
+    },
+    "cde46077-6e42-407e-a49c-c6971012d3d2": {
+      "connections": {
+        "true": "4e214e56-ae2a-4cff-835a-42fa3326b7ec"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 1228,
+      "y": 433.76666259765625
+    },
+    "e8afe281-eb22-47a3-8c63-619d55bc0c75": {
+      "connections": {
+        "true": "51391396-892b-45d9-9ad0-f1bce4a6e72a"
+      },
+      "displayName": "SharedState print",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 438,
+      "y": 106.76666259765625
+    },
+    "fa0e36ef-55c9-4661-9431-8d3358405038": {
+      "connections": {
+        "true": "cde46077-6e42-407e-a49c-c6971012d3d2"
+      },
+      "displayName": "SharedState Print",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1086,
+      "y": 730.7666625976562
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1355,
+      "y": 660.8333333333333
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1273,
+      "y": 190
+    },
+    "startNode": {
+      "x": 70,
+      "y": 450
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

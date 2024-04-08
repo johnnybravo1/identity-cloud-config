@@ -1,0 +1,94 @@
+{
+  "_id": "termsandconditions",
+  "_rev": "-758357565",
+  "enabled": true,
+  "entryNodeId": "8acbdf18-6f95-4ee1-8ba7-7ed15f55e6b4",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "287836e4-94ab-481d-9268-21082b17d642": {
+      "connections": {
+        "true": "4a1231dc-e2cb-4f92-991a-b755bde44ee7"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 338,
+      "y": 599.7666625976562
+    },
+    "459e728d-3cc4-4fc7-b125-cf91f19d70a9": {
+      "connections": {
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "PATCHED": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Patch Object",
+      "nodeType": "PatchObjectNode",
+      "x": 972,
+      "y": 228.76666259765625
+    },
+    "4a1231dc-e2cb-4f92-991a-b755bde44ee7": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "655ddeab-8bf3-4886-adef-f9aee2889dee"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 333,
+      "y": 442.76666259765625
+    },
+    "655ddeab-8bf3-4886-adef-f9aee2889dee": {
+      "connections": {
+        "false": "b16fa02a-a746-4a00-a114-100063b8cf4c",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Terms and Conditions Decision",
+      "nodeType": "TermsAndConditionsDecisionNode",
+      "x": 540,
+      "y": 243.76666259765625
+    },
+    "8acbdf18-6f95-4ee1-8ba7-7ed15f55e6b4": {
+      "connections": {
+        "outcome": "287836e4-94ab-481d-9268-21082b17d642"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 160,
+      "y": 265.76666259765625
+    },
+    "b16fa02a-a746-4a00-a114-100063b8cf4c": {
+      "connections": {
+        "outcome": "459e728d-3cc4-4fc7-b125-cf91f19d70a9"
+      },
+      "displayName": "Accept Terms and Conditions",
+      "nodeType": "AcceptTermsAndConditionsNode",
+      "x": 770.816650390625,
+      "y": 139.76666259765625
+    },
+    "b78eb2ff-69f8-4abf-8e18-668706569610": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "655ddeab-8bf3-4886-adef-f9aee2889dee"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 559,
+      "y": 385.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 908,
+      "y": 407
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

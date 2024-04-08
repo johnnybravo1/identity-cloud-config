@@ -1,0 +1,33 @@
+{
+  "_id": "e07318e5-d851-4e69-bf10-b9f0e6422c29",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1428361280",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "58741669-b3be-4ca7-95c4-2edcbb0baadd",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "c167c653-ccaf-4fe1-bd03-6af4d5dbb48c",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "New here? <a href=\"#/service/Registration\">Create an account</a><br><a href=\"#/service/ForgottenUsername\">Forgot username?</a><a href=\"#/service/ResetPassword\"> Forgot password?</a>"
+  },
+  "pageHeader": {
+    "en": "Sign In"
+  }
+}

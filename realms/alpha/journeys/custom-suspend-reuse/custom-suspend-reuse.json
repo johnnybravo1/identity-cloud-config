@@ -1,0 +1,124 @@
+{
+  "_id": "custom-suspend-reuse",
+  "_rev": "992895554",
+  "description": "Forgotten Username Tree",
+  "enabled": true,
+  "entryNodeId": "08274d7c-852c-4909-8f56-672efffe6e64",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "08274d7c-852c-4909-8f56-672efffe6e64": {
+      "connections": {
+        "bypass": "3579febf-d9e5-46d5-980d-a8a884b6e8d0",
+        "default": "d4e472ab-bf06-47c9-8a6a-748c5b3e5569",
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "expired": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Magic Link Decision Node",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 210,
+      "y": 205
+    },
+    "33af1164-44b8-4208-a995-426c4e129873": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "80af88d7-1eb3-41e6-a288-f069f5b40e5d"
+      },
+      "displayName": "Delete GUID from User Profile",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 780,
+      "y": 358.76666259765625
+    },
+    "3579febf-d9e5-46d5-980d-a8a884b6e8d0": {
+      "connections": {
+        "DONE": "33af1164-44b8-4208-a995-426c4e129873"
+      },
+      "displayName": "Polling Wait Node",
+      "nodeType": "PollingWaitNode",
+      "x": 563,
+      "y": 385.76666259765625
+    },
+    "458717d0-8dec-4c56-a562-c905a9e908f2": {
+      "connections": {
+        "false": "fb8a56d7-4649-437d-8647-905d0ffbc17b",
+        "true": "47bf1576-3982-4874-ae0b-243e2d464fd4"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 720,
+      "y": 123
+    },
+    "47bf1576-3982-4874-ae0b-243e2d464fd4": {
+      "connections": {
+        "error": "fb8a56d7-4649-437d-8647-905d0ffbc17b",
+        "success": "84ab2f26-3aa0-4f53-820c-5d9dfa2ef701"
+      },
+      "displayName": "Get IDM Access Token",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 962,
+      "y": 131
+    },
+    "747ccb45-64d6-4d40-aaf0-e0e4b5d79a25": {
+      "connections": {
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "PATCHED": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Patch Object",
+      "nodeType": "PatchObjectNode",
+      "x": 1278,
+      "y": 372
+    },
+    "80af88d7-1eb3-41e6-a288-f069f5b40e5d": {
+      "connections": {
+        "outcome": "747ccb45-64d6-4d40-aaf0-e0e4b5d79a25"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 1064,
+      "y": 359.76666259765625
+    },
+    "84ab2f26-3aa0-4f53-820c-5d9dfa2ef701": {
+      "connections": {
+        "error": "fb8a56d7-4649-437d-8647-905d0ffbc17b",
+        "success": "fb8a56d7-4649-437d-8647-905d0ffbc17b"
+      },
+      "displayName": "Send Magic Link",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1237,
+      "y": 137
+    },
+    "d4e472ab-bf06-47c9-8a6a-748c5b3e5569": {
+      "connections": {
+        "outcome": "458717d0-8dec-4c56-a562-c905a9e908f2"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 487,
+      "y": 116
+    },
+    "fb8a56d7-4649-437d-8647-905d0ffbc17b": {
+      "connections": {},
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 1460,
+      "y": 261.5
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1507,
+      "y": 396
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 625,
+      "y": 574
+    },
+    "startNode": {
+      "x": 70,
+      "y": 248
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Username Reset\"]"
+  }
+}

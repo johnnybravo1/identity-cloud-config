@@ -1,0 +1,16 @@
+{
+  "_id": "264b2a97-d475-40a0-9622-6d21431e6c5d",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "145239730",
+  "_type": {
+    "_id": "RegisterLogoutWebhookNode",
+    "collection": true,
+    "name": "Register Logout Webhook"
+  },
+  "webhookName": "OAuth2RevokeHook"
+}

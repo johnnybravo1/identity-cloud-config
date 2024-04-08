@@ -1,0 +1,123 @@
+{
+  "_id": "Demo-AA-Debug",
+  "_rev": "-1482906174",
+  "enabled": true,
+  "entryNodeId": "b66fb091-88f6-4dbd-b514-7a7ef5a5895f",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "11318013-95fe-4f89-92cc-be377beefad3": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Autonomous Access Result",
+      "nodeType": "AutonomousAccessResultNode",
+      "x": 1127.3333333333335,
+      "y": 378.719228108724
+    },
+    "2f88b7d9-1a88-436f-8637-b61def81f6e5": {
+      "connections": {
+        "outcome": "592950a7-85e4-4429-ad90-2c630370caab"
+      },
+      "displayName": "Autonomous Access Signal",
+      "nodeType": "AutonomousAccessSignalNode",
+      "x": 395.7109375,
+      "y": 214.015625
+    },
+    "592950a7-85e4-4429-ad90-2c630370caab": {
+      "connections": {
+        "true": "9620b9c2-6b6d-4f1d-962a-505cdd12e458"
+      },
+      "displayName": "Debug",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 626,
+      "y": 55.231536865234375
+    },
+    "74def67e-50a1-4d2a-80c8-d0ae8f8ab990": {
+      "connections": {
+        "false": "ecdb2a2e-6e9a-4967-9687-1527ac32c4c3",
+        "true": "b5eb2b56-3cc6-48b7-873d-561d77d2bd20"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 16,
+      "y": 399.140625
+    },
+    "9620b9c2-6b6d-4f1d-962a-505cdd12e458": {
+      "connections": {
+        "high": "ecdb2a2e-6e9a-4967-9687-1527ac32c4c3",
+        "low": "11318013-95fe-4f89-92cc-be377beefad3",
+        "medium": "c4d1eb9c-c1e2-4dfb-a86e-f6294b91976d",
+        "unknown": "c4d1eb9c-c1e2-4dfb-a86e-f6294b91976d"
+      },
+      "displayName": "Autonomous Access Decision",
+      "nodeType": "AutonomousAccessDecisionNode",
+      "x": 584,
+      "y": 331.76666259765625
+    },
+    "b5eb2b56-3cc6-48b7-873d-561d77d2bd20": {
+      "connections": {
+        "false": "2f88b7d9-1a88-436f-8637-b61def81f6e5",
+        "true": "2f88b7d9-1a88-436f-8637-b61def81f6e5"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 280,
+      "y": 348.86789989471436
+    },
+    "b66fb091-88f6-4dbd-b514-7a7ef5a5895f": {
+      "connections": {
+        "outcome": "74def67e-50a1-4d2a-80c8-d0ae8f8ab990"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 97,
+      "y": 99.140625
+    },
+    "c4d1eb9c-c1e2-4dfb-a86e-f6294b91976d": {
+      "connections": {
+        "true": "11318013-95fe-4f89-92cc-be377beefad3"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 1078,
+      "y": 55.76666259765625
+    },
+    "db571ccd-c346-47c9-b268-dc40f638b769": {
+      "connections": {
+        "false": "ecdb2a2e-6e9a-4967-9687-1527ac32c4c3",
+        "true": "11318013-95fe-4f89-92cc-be377beefad3"
+      },
+      "displayName": "Send to: Push MFA",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 644,
+      "y": 787.015625
+    },
+    "ecdb2a2e-6e9a-4967-9687-1527ac32c4c3": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Autonomous Access Result",
+      "nodeType": "AutonomousAccessResultNode",
+      "x": 1120,
+      "y": 541.7357940673828
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1415,
+      "y": 365
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1425,
+      "y": 534
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Fraud\"]"
+  }
+}

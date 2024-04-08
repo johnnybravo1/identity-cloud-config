@@ -1,0 +1,15 @@
+{
+  "_id": "3abf3377-4012-42ef-8c17-4dce718789c7",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-2006730314",
+  "_type": {
+    "_id": "UsernameCollectorNode",
+    "collection": true,
+    "name": "Username Collector"
+  }
+}

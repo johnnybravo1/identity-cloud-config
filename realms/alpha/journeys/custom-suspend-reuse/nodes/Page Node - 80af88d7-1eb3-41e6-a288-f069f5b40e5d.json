@@ -1,0 +1,24 @@
+{
+  "_id": "80af88d7-1eb3-41e6-a288-f069f5b40e5d",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "586309132",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "940e5c49-f261-48cd-b6ed-81624222824e",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

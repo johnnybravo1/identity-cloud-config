@@ -1,0 +1,21 @@
+{
+  "_id": "a426c630-dcdb-4602-9c5f-debd1be15c94",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-1328566114",
+  "_type": {
+    "_id": "AttributeCollectorNode",
+    "collection": true,
+    "name": "Attribute Collector"
+  },
+  "attributesToCollect": [
+    "custom_KBA"
+  ],
+  "identityAttribute": "userName",
+  "required": true,
+  "validateInputs": false
+}

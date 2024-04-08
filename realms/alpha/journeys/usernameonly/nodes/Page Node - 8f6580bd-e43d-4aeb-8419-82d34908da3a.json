@@ -1,0 +1,28 @@
+{
+  "_id": "8f6580bd-e43d-4aeb-8419-82d34908da3a",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "584757058",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "52ce8841-7942-4e64-996f-0b0a9a895e48",
+      "displayName": "Message Node",
+      "nodeType": "MessageNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "8c2e6b79-8bf1-467c-9901-b691c8f0b80f",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-845971552",
+  "_type": {
+    "_id": "RecoveryCodeCollectorDecisionNode",
+    "collection": true,
+    "name": "Recovery Code Collector Decision"
+  },
+  "recoveryCodeType": "OATH"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "emailSuspend",
+  "_rev": "1744895282",
+  "enabled": true,
+  "entryNodeId": "a30b8745-c724-4729-99b0-9a91500871ac",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "a30b8745-c724-4729-99b0-9a91500871ac": {
+      "connections": {
+        "outcome": "bc99ae32-89b3-48e0-992b-445ba2d6ffd9"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 237,
+      "y": 78.76666259765625
+    },
+    "baf10b4f-e92a-477c-82ae-f4d55a3e1a97": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Email Suspend Node",
+      "nodeType": "EmailSuspendNode",
+      "x": 782,
+      "y": 285.76666259765625
+    },
+    "bc99ae32-89b3-48e0-992b-445ba2d6ffd9": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "baf10b4f-e92a-477c-82ae-f4d55a3e1a97"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 449,
+      "y": 184.76666259765625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

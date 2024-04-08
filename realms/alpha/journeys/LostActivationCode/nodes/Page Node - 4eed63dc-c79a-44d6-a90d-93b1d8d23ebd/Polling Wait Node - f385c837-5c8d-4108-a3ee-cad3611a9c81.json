@@ -1,0 +1,23 @@
+{
+  "_id": "f385c837-5c8d-4108-a3ee-cad3611a9c81",
+  "_outcomes": [
+    {
+      "displayName": "Done",
+      "id": "DONE"
+    }
+  ],
+  "_rev": "-1590219552",
+  "_type": {
+    "_id": "PollingWaitNode",
+    "collection": true,
+    "name": "Polling Wait Node"
+  },
+  "exitMessage": {},
+  "exitable": false,
+  "secondsToWait": 15,
+  "spamDetectionEnabled": false,
+  "spamDetectionTolerance": 3,
+  "waitingMessage": {
+    "en": "An email has been sent. Please check your inbox and click on the link. This page will redirect to the login page after 15 seconds."
+  }
+}

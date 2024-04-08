@@ -1,0 +1,54 @@
+{
+  "_id": "53dee207-0767-44c1-bb09-1905378826f3",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-604607019",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "be3aa676-41ec-4cae-99c2-236bbeeb9c10",
+      "displayName": "Input Validation Error Message",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "4c474214-cdf8-40b0-9e07-94eddbd35d8a",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    }
+  ],
+  "pageDescription": {
+    "de": "Ändere dein Passwort, um deinen Account zu schützen.",
+    "de-de": "Ändere dein Passwort, um deinen Account zu schützen.",
+    "en": "Change your password to protect your account",
+    "es": "Cambia la contraseña para proteger tu cuenta",
+    "es-es": "Cambia la contraseña para proteger tu cuenta",
+    "fr": "Mettre à jour le mot de passe",
+    "fr-fr": "Mettre à jour le mot de passe",
+    "it": "Cambia password",
+    "it-it": "Cambia password",
+    "nl": "Verander wachtwoord",
+    "nl-nl": "Verander wachtwoord"
+  },
+  "pageHeader": {
+    "de": "Passwort zurücksetzen",
+    "de-de": "Passwort zurücksetzen",
+    "en": "Reset Password",
+    "es": "Recuperar contraseña",
+    "es-es": "Recuperar contraseña",
+    "fr": "Initialiser ou réinitialiser mon mot de passe",
+    "fr-fr": "Initialiser ou réinitialiser mon mot de passe",
+    "it": "Reset Password",
+    "it-it": "Reset Password",
+    "nl": "Wachtwoord opnieuw instellen",
+    "nl-nl": "Wachtwoord opnieuw instellen"
+  },
+  "stage": "{\"ValidatedCreatePasswordCallback\":[{\"id\":\"009c19c8-9572-47bb-adb2-1f092c559a43\",\"confirmPassword\":true},{\"id\":\"4c474214-cdf8-40b0-9e07-94eddbd35d8a\",\"confirmPassword\":true}],\"submitButtonText\":{\"fr-fr\":\"Suivant\",\"it\":\"Prossimo\",\"it-it\":\"Prossimo\",\"nl\":\"Volgende\",\"nl-nl\":\"Volgende\",\"fr\":\"Suivant\",\"en\":\"Next\",\"de\":\"Passwort zurücksetzen\",\"de-de\":\"Passwort zurücksetzen\",\"es\":\"Siguiente\",\"es-es\":\"Siguiente\"}}"
+}

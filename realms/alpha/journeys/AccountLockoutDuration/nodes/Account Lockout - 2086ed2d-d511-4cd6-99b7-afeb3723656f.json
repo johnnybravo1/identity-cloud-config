@@ -1,0 +1,16 @@
+{
+  "_id": "2086ed2d-d511-4cd6-99b7-afeb3723656f",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1257794623",
+  "_type": {
+    "_id": "AccountLockoutNode",
+    "collection": true,
+    "name": "Account Lockout"
+  },
+  "lockAction": "LOCK"
+}

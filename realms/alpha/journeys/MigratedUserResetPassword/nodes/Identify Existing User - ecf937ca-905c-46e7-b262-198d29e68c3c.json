@@ -1,0 +1,21 @@
+{
+  "_id": "ecf937ca-905c-46e7-b262-198d29e68c3c",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-1349219053",
+  "_type": {
+    "_id": "IdentifyExistingUserNode",
+    "collection": true,
+    "name": "Identify Existing User"
+  },
+  "identifier": "country",
+  "identityAttribute": "_id"
+}

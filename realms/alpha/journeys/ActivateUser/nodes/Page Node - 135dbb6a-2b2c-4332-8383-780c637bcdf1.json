@@ -1,0 +1,34 @@
+{
+  "_id": "135dbb6a-2b2c-4332-8383-780c637bcdf1",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1985693002",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "ab2b7575-9e8c-4e2b-9c34-b3a980752bb6",
+      "displayName": "Input Validation Error Message",
+      "nodeType": "ScriptedDecisionNode"
+    },
+    {
+      "_id": "f8926ddb-a02c-4e35-8a2c-2975dd2745bc",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "Enter a password"
+  },
+  "pageHeader": {
+    "en": "Set password"
+  },
+  "stage": "{\"ValidatedCreatePasswordCallback\":[{\"id\":\"f8926ddb-a02c-4e35-8a2c-2975dd2745bc\",\"confirmPassword\":true}]}"
+}

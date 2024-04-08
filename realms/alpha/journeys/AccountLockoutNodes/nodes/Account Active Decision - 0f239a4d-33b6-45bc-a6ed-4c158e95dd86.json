@@ -1,0 +1,19 @@
+{
+  "_id": "0f239a4d-33b6-45bc-a6ed-4c158e95dd86",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-826340258",
+  "_type": {
+    "_id": "AccountActiveDecisionNode",
+    "collection": true,
+    "name": "Account Active Decision"
+  }
+}

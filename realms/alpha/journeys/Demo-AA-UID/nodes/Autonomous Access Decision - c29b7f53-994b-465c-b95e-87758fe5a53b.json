@@ -1,0 +1,29 @@
+{
+  "_id": "c29b7f53-994b-465c-b95e-87758fe5a53b",
+  "_outcomes": [
+    {
+      "displayName": "Unknown",
+      "id": "unknown"
+    },
+    {
+      "displayName": "High",
+      "id": "high"
+    },
+    {
+      "displayName": "Medium",
+      "id": "medium"
+    },
+    {
+      "displayName": "Low",
+      "id": "low"
+    }
+  ],
+  "_rev": "-147627276",
+  "_type": {
+    "_id": "AutonomousAccessDecisionNode",
+    "collection": true,
+    "name": "Autonomous Access Decision"
+  },
+  "lowRiskThreshold": "30",
+  "mediumRiskThreshold": "70"
+}

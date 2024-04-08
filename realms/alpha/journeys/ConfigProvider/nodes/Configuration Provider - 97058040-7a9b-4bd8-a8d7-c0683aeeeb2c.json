@@ -1,0 +1,28 @@
+{
+  "_id": "97058040-7a9b-4bd8-a8d7-c0683aeeeb2c",
+  "_outcomes": [
+    {
+      "displayName": "Patched",
+      "id": "PATCHED"
+    },
+    {
+      "displayName": "Failed",
+      "id": "FAILURE"
+    },
+    {
+      "displayName": "Configuration failure",
+      "id": "CONFIGURATION_FAILED"
+    }
+  ],
+  "_rev": "-359564347",
+  "_type": {
+    "_id": "ConfigProviderNode",
+    "collection": true,
+    "name": "Configuration Provider"
+  },
+  "nodeType": "PatchObjectNode",
+  "script": "5e854779-6ec1-4c39-aeba-0477e0986646",
+  "scriptInputs": [
+    "*"
+  ]
+}

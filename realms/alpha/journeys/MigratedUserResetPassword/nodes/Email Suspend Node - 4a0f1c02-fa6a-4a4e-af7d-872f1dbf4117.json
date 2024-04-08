@@ -1,0 +1,24 @@
+{
+  "_id": "4a0f1c02-fa6a-4a4e-af7d-872f1dbf4117",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-441639008",
+  "_type": {
+    "_id": "EmailSuspendNode",
+    "collection": true,
+    "name": "Email Suspend Node"
+  },
+  "emailAttribute": "mail",
+  "emailSuspendMessage": {
+    "en": "An email has been sent to the address you entered. Click the link in that email to proceed.",
+    "nl": "We hebben een e-mail gestuurd naar het door jou opgegeven e-mailadres. Klik op de link in de e-mail om verder te gaan.",
+    "nl-nl": "We hebben een e-mail gestuurd naar het door jou opgegeven e-mailadres. Klik op de link in de e-mail om verder te gaan."
+  },
+  "emailTemplateName": "resetPasswordNl",
+  "identityAttribute": "mail",
+  "objectLookup": true
+}

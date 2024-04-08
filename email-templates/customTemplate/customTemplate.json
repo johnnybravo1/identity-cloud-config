@@ -1,0 +1,27 @@
+{
+  "_id": "emailTemplate/customTemplate",
+  "defaultLocale": "en",
+  "description": "",
+  "displayName": "customTemplate",
+  "enabled": true,
+  "from": "",
+  "html": {
+    "en": {
+      "file": "customTemplate.en.html"
+    }
+  },
+  "message": {
+    "en": {
+      "file": "customTemplate.en.md"
+    }
+  },
+  "mimeType": "text/html",
+  "name": "welcome",
+  "styles": {
+    "file": "customTemplate.css"
+  },
+  "subject": {
+    "en": "Your account has been created"
+  },
+  "templateId": "customTemplate"
+}

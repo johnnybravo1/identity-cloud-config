@@ -1,0 +1,85 @@
+{
+  "_id": "Copy of AccountLockoutDuration",
+  "_rev": "-1837230647",
+  "enabled": true,
+  "entryNodeId": "550870ea-1a28-4ab0-8ae9-5372379db574",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "2eeb9085-0d9a-48b3-8894-f29d2d19cf4f": {
+      "connections": {
+        "outcome": "6437395b-7744-4742-aa6e-19378d72c55e"
+      },
+      "displayName": "Account Lockout",
+      "nodeType": "AccountLockoutNode",
+      "x": 931,
+      "y": 379.5
+    },
+    "550870ea-1a28-4ab0-8ae9-5372379db574": {
+      "connections": {
+        "outcome": "92e26f0f-6986-493b-8cfe-29bf0f303ec4"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 210,
+      "y": 80
+    },
+    "575e4668-671b-4032-95e5-f41a07c786a6": {
+      "connections": {
+        "false": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "true": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Account locked message",
+      "nodeType": "PageNode",
+      "x": 1348,
+      "y": 357.5
+    },
+    "6437395b-7744-4742-aa6e-19378d72c55e": {
+      "connections": {
+        "false": "575e4668-671b-4032-95e5-f41a07c786a6",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Account Active Decision",
+      "nodeType": "AccountActiveDecisionNode",
+      "x": 1161,
+      "y": 108.5
+    },
+    "7035d18a-afbc-46c4-b977-4408a46d0b1a": {
+      "connections": {
+        "Reject": "2eeb9085-0d9a-48b3-8894-f29d2d19cf4f",
+        "Retry": "550870ea-1a28-4ab0-8ae9-5372379db574"
+      },
+      "displayName": "Retry Limit Decision",
+      "nodeType": "RetryLimitDecisionNode",
+      "x": 689,
+      "y": 381.5
+    },
+    "92e26f0f-6986-493b-8cfe-29bf0f303ec4": {
+      "connections": {
+        "false": "7035d18a-afbc-46c4-b977-4408a46d0b1a",
+        "true": "6437395b-7744-4742-aa6e-19378d72c55e"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 472,
+      "y": 103.5
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1715,
+      "y": 347
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1671,
+      "y": 126
+    },
+    "startNode": {
+      "x": 70,
+      "y": 126
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

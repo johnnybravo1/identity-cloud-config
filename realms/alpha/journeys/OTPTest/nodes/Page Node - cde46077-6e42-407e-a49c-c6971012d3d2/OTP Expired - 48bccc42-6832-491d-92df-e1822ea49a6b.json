@@ -1,0 +1,24 @@
+{
+  "_id": "48bccc42-6832-491d-92df-e1822ea49a6b",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "2108845456",
+  "_type": {
+    "_id": "MessageNode",
+    "collection": true,
+    "name": "Message Node"
+  },
+  "message": {
+    "en": "OTP Expired!!"
+  },
+  "messageNo": {},
+  "messageYes": {}
+}

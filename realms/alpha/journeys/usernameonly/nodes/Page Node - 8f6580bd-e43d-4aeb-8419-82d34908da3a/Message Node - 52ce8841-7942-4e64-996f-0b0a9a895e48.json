@@ -1,0 +1,24 @@
+{
+  "_id": "52ce8841-7942-4e64-996f-0b0a9a895e48",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "1320714069",
+  "_type": {
+    "_id": "MessageNode",
+    "collection": true,
+    "name": "Message Node"
+  },
+  "message": {
+    "en": "Journey has been resumed"
+  },
+  "messageNo": {},
+  "messageYes": {}
+}

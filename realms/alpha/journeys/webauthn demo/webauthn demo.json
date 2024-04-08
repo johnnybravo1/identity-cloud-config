@@ -1,0 +1,100 @@
+{
+  "_id": "webauthn demo",
+  "_rev": "-1542819631",
+  "enabled": true,
+  "entryNodeId": "2cae4701-de11-427d-bdc4-4285bde7915a",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "2150396b-a842-42e1-b2fb-b0becc38654a": {
+      "connections": {
+        "outcome": "c4d3a78d-18e3-4e12-b323-7a8db8ebd6b7"
+      },
+      "displayName": "Recovery Code Display Node",
+      "nodeType": "RecoveryCodeDisplayNode",
+      "x": 200,
+      "y": 513
+    },
+    "2cae4701-de11-427d-bdc4-4285bde7915a": {
+      "connections": {
+        "outcome": "c4d3a78d-18e3-4e12-b323-7a8db8ebd6b7"
+      },
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode",
+      "x": 210,
+      "y": 247.5
+    },
+    "79c34f0e-ab48-4984-890a-a6d0e1bdef04": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "failure": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "unsupported": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "WebAuthn Registration Node",
+      "nodeType": "WebAuthnRegistrationNode",
+      "x": 1228,
+      "y": 58.33333333333333
+    },
+    "7b6bb4aa-5325-44d6-a90e-c9a49b629880": {
+      "connections": {
+        "outcome": "cae29d85-5518-45e7-94d2-732d389bfe36"
+      },
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode",
+      "x": 717,
+      "y": 215
+    },
+    "8c2e6b79-8bf1-467c-9901-b691c8f0b80f": {
+      "connections": {
+        "false": "2150396b-a842-42e1-b2fb-b0becc38654a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Recovery Code Collector Decision",
+      "nodeType": "RecoveryCodeCollectorDecisionNode",
+      "x": 792,
+      "y": 663
+    },
+    "c4d3a78d-18e3-4e12-b323-7a8db8ebd6b7": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "failure": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "noDevice": "7b6bb4aa-5325-44d6-a90e-c9a49b629880",
+        "recoveryCode": "8c2e6b79-8bf1-467c-9901-b691c8f0b80f",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "unsupported": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "WebAuthn Authentication Node",
+      "nodeType": "WebAuthnAuthenticationNode",
+      "x": 475,
+      "y": 419.5
+    },
+    "cae29d85-5518-45e7-94d2-732d389bfe36": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "79c34f0e-ab48-4984-890a-a6d0e1bdef04"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 939,
+      "y": 84
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1087,
+      "y": 265
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1383,
+      "y": 329.1666666666667
+    },
+    "startNode": {
+      "x": 70,
+      "y": 240
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

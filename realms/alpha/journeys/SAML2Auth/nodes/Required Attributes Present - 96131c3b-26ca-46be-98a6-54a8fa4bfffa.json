@@ -1,0 +1,20 @@
+{
+  "_id": "96131c3b-26ca-46be-98a6-54a8fa4bfffa",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-1305433236",
+  "_type": {
+    "_id": "RequiredAttributesDecisionNode",
+    "collection": true,
+    "name": "Required Attributes Present"
+  },
+  "identityResource": "managed/alpha_user"
+}

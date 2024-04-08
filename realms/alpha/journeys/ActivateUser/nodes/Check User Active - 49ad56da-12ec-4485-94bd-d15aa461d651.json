@@ -1,0 +1,23 @@
+{
+  "_id": "49ad56da-12ec-4485-94bd-d15aa461d651",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-1637784672",
+  "_type": {
+    "_id": "AttributeValueDecisionNode",
+    "collection": true,
+    "name": "Attribute Value Decision"
+  },
+  "comparisonAttribute": "accountStatus",
+  "comparisonOperation": "EQUALS",
+  "comparisonValue": "Active",
+  "identityAttribute": "_id"
+}

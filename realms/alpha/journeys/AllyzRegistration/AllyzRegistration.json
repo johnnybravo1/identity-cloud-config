@@ -1,0 +1,114 @@
+{
+  "_id": "AllyzRegistration",
+  "_rev": "-2113908475",
+  "description": "Platform Registration Tree",
+  "enabled": true,
+  "entryNodeId": "bd1d452e-d318-489a-bc32-7d58a19969d9",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "nodes": {
+    "30e7ceae-b881-4e15-8615-1151a6b080df": {
+      "connections": {
+        "false": "ef0c268c-bc88-46e6-b849-817f16c0116b",
+        "true": "4c795042-ff07-4b54-883d-fe4953fced5a"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 433,
+      "y": 521
+    },
+    "3204ca25-89a7-447c-9b8f-9c58f42aba5e": {
+      "connections": {
+        "false": "bd1d452e-d318-489a-bc32-7d58a19969d9",
+        "true": "30e7ceae-b881-4e15-8615-1151a6b080df"
+      },
+      "displayName": "Input Validation Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 224,
+      "y": 743.3203125
+    },
+    "4c795042-ff07-4b54-883d-fe4953fced5a": {
+      "connections": {
+        "true": "bd1d452e-d318-489a-bc32-7d58a19969d9"
+      },
+      "displayName": "Set Error Email Exists",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 669.7999992370605,
+      "y": 554.2124938964844
+    },
+    "57afa4d8-1554-492c-8d1f-05cd47b6f7b8": {
+      "connections": {
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 941.75,
+      "y": 232.3203125
+    },
+    "8be69588-67e6-4d75-9659-df89a202b4d6": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Delete User Object",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 728,
+      "y": 376.76666259765625
+    },
+    "8e0adfe8-b4ae-4038-a183-f77227856d43": {
+      "connections": {
+        "CREATED": "57afa4d8-1554-492c-8d1f-05cd47b6f7b8",
+        "FAILURE": "ac492f16-d936-4b50-bbfb-2418c5690b47"
+      },
+      "displayName": "Create Object",
+      "nodeType": "CreateObjectNode",
+      "x": 729,
+      "y": 37.3203125
+    },
+    "ac492f16-d936-4b50-bbfb-2418c5690b47": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "8be69588-67e6-4d75-9659-df89a202b4d6"
+      },
+      "displayName": "Rollback Account",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 657,
+      "y": 212.76666259765625
+    },
+    "bd1d452e-d318-489a-bc32-7d58a19969d9": {
+      "connections": {
+        "outcome": "3204ca25-89a7-447c-9b8f-9c58f42aba5e"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 197,
+      "y": 32
+    },
+    "ef0c268c-bc88-46e6-b849-817f16c0116b": {
+      "connections": {
+        "error": "bd1d452e-d318-489a-bc32-7d58a19969d9",
+        "success": "8e0adfe8-b4ae-4038-a183-f77227856d43"
+      },
+      "displayName": "Create Account - Account Management API",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 409,
+      "y": 31.3203125
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1183,
+      "y": 257
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 997,
+      "y": 90
+    },
+    "startNode": {
+      "x": 70,
+      "y": 175
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Registration\"]"
+  }
+}

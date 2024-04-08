@@ -1,0 +1,30 @@
+{
+  "_id": "b6eaeb07-7d2f-4512-8bce-0467204cb003",
+  "_outcomes": [
+    {
+      "displayName": "allowed",
+      "id": "allowed"
+    },
+    {
+      "displayName": "not-allowed",
+      "id": "not-allowed"
+    }
+  ],
+  "_rev": "1248734741",
+  "_type": {
+    "_id": "ScriptedDecisionNode",
+    "collection": true,
+    "name": "Scripted Decision"
+  },
+  "inputs": [
+    "*"
+  ],
+  "outcomes": [
+    "allowed",
+    "not-allowed"
+  ],
+  "outputs": [
+    "*"
+  ],
+  "script": "60c7f3a3-5351-46ce-973e-dc8bb630b669"
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "6b02d04a-873d-43b1-832f-ad2117eadc95",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "410232539",
+  "_type": {
+    "_id": "EmailSuspendNode",
+    "collection": true,
+    "name": "Email Suspend Node"
+  },
+  "emailAttribute": "mail",
+  "emailSuspendMessage": {
+    "en": "An email has been sent to your address, please verify your email address to update your password. Click the link in that email to proceed."
+  },
+  "emailTemplateName": "updatePassword",
+  "identityAttribute": "userName",
+  "objectLookup": true
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "d9f7db6f-88f0-4d3d-ad83-96f38601c586",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1674545750",
+  "_type": {
+    "_id": "AttributeCollectorNode",
+    "collection": true,
+    "name": "Attribute Collector"
+  },
+  "attributesToCollect": [
+    "givenName",
+    "sn",
+    "mail",
+    "preferences/marketing",
+    "preferences/updates"
+  ],
+  "identityAttribute": "userName",
+  "required": true,
+  "validateInputs": true
+}

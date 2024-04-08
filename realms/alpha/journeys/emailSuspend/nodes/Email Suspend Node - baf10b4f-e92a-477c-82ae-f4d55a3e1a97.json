@@ -1,0 +1,22 @@
+{
+  "_id": "baf10b4f-e92a-477c-82ae-f4d55a3e1a97",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-1846242812",
+  "_type": {
+    "_id": "EmailSuspendNode",
+    "collection": true,
+    "name": "Email Suspend Node"
+  },
+  "emailAttribute": "mail",
+  "emailSuspendMessage": {
+    "en": "An email has been sent to the address you entered. Click the link in that email to proceed."
+  },
+  "emailTemplateName": "registration",
+  "identityAttribute": "userName",
+  "objectLookup": false
+}
