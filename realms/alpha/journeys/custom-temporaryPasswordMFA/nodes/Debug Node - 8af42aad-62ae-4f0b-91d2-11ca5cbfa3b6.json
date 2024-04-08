@@ -1,0 +1,16 @@
+{
+  "_id": "8af42aad-62ae-4f0b-91d2-11ca5cbfa3b6",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "937086516",
+  "_type": {
+    "_id": "DebugNode",
+    "collection": true,
+    "name": "Debug Node"
+  },
+  "popupEnabled": false
+}

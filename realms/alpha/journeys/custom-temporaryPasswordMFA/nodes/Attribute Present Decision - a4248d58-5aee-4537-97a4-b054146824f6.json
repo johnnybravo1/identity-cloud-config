@@ -1,0 +1,21 @@
+{
+  "_id": "a4248d58-5aee-4537-97a4-b054146824f6",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-116270345",
+  "_type": {
+    "_id": "AttributePresentDecisionNode",
+    "collection": true,
+    "name": "Attribute Present Decision"
+  },
+  "identityAttribute": "userName",
+  "presentAttribute": "password"
+}
