@@ -10,15 +10,15 @@
       "id": "error"
     }
   ],
-  "_rev": "420002674",
+  "_rev": "1708310370",
   "_type": {
     "_id": "VerifyAuthSenderNode",
     "collection": true,
     "name": "Twilio Verify Sender"
   },
-  "accountSID": "ACd629f8a20635be2aaac9a1254167eff1",
+  "accountSID": "&{esv.twilio.account.sid}",
   "channel": "SMS",
   "identifierSharedState": "userIdentifier",
   "requestIdentifier": false,
-  "serviceSID": "VAe79dc4c04096f6b75c3c91cb480101d0"
+  "serviceSID": "&{esv.twilio.service.sid}"
 }
